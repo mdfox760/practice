@@ -6,6 +6,11 @@ class Product
     puts "SKU'S"
     skus = { "101" => "shirts", "201" => "hats", "301" => "hoodies" }
     skus.each {|key, value| puts "#{key} SKU is #{value}"}
+    skus.each do |skus|
+      puts "Sku's in inventory: #{skus}"
+    end
+    puts "The total number of skus: "
+    skus.count
   end
 
   def prices
@@ -56,6 +61,6 @@ end
 
 product = Product.new()
 
-puts product.items.sort
+puts product.items
 puts product.vendors.sort
 puts product.prices

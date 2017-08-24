@@ -9,11 +9,13 @@ puts "If you do want that, hit RETURN."
 
 $stdin.gets
 
-puts "Opening the file..."
-target = open("text", 'w')
 
-puts "Truncating the file.  Goodbye!"
-target.truncate(0)
+ puts "Opening the file..."
+ target = open("text", 'w')
+
+# This part does the erasing.
+# puts "Truncating the file.  Goodbye!"
+# target.truncate(0)
 
 puts "Now I'm going to ask you for three lines."
 
