@@ -1,10 +1,10 @@
 class Me
   def initialize
     @name = "Matt 'Action' Fox"
-    @address = "42200 Moraga rd., Temecula, CA. 92591"
-    @address2 = "130 Loma Alta dr., Oceanside, CA. 92054"
-    @email = "mdfox760@gmail.com"
-    @phone = "951-395-3365"
+    @address = "Temecula"
+    @address2 = "Oceanside"
+    @email = "mdfox760@email.com"
+    @phone = "000-000-0000"
   end
 
   def name
@@ -14,15 +14,15 @@ class Me
   def phone
     @phone
   end
-  
+
   def email
     @email
   end
-  
+
   def address
     @address
   end
-  
+
   def address2
     @address2
   end
