@@ -42,14 +42,19 @@ end
 class NewBankAccount < Bank
   attr_accessor :account, :name, :address, :phone, :balance
 
-  def initialize(account, name, address, phone, balance)
+  def initialize(account, address, balance, initial_deposit, name, phone)
     @account = account
-    @name = name
     @address = address
+    @initial_deposit
+    @name = name
     @phone = phone
     @balance = balance
 
     puts super(number, name, balance)
+  end
+
+  def initial_deposit
+    @initial_deposit
   end
 
   def set_account(account)
