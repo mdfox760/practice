@@ -32,3 +32,12 @@ puts t.hours_in_year
 puts t.minutes_in_decade
 puts t.seconds_in_year
 # puts t.seconds_old
+
+# To use the Time class ---
+n = Time.new
+puts ("The time is now: ")
+puts n
+puts "\n"
+# Make a time for a specific moment
+puts "A tragic day: "
+puts Time.mktime(2001, 9, 11, 7, 28)

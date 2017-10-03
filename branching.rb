@@ -3,7 +3,7 @@ def branching
   puts "Hello, what's your name?"
   name = gets.chomp
   puts 'Hello, ' + name.capitalize + '.'
-  if name == 'Matt'
+  if (name == 'Matt' or name == 'matt')
     puts "What a great name!"
   else puts "Nice to meet you!"
   end
@@ -13,7 +13,7 @@ def fortune_teller
   puts "I am a fortune teller. What's your name?"
   print 'Type in your name: > '
   name = gets.chomp
-  if name == 'Matt'
+  if (name == 'Matt' or name == 'matt')
     puts 'I see great things in your future.'
   else
     puts 'Your future is .... Oh my! Look at the time!'
@@ -41,6 +41,20 @@ def teacher
   end
 end
 
-# branching
+def looping
+  # echos text unless you enter bye
+  puts "Type something or to quit: enter bye: > "
+  command = ''
+  while command != 'bye'
+    puts command
+    command = gets.chomp
+  end
+  puts 'Come again soon!'
+end
+
+
+
+ branching
 # fortune_teller
-teacher
+# teacher
+# looping
