@@ -7,34 +7,22 @@ puts "We're going to erase #{filename}"
 puts "If you don't want that, hit CTRL-C (^C)."
 puts "If you do want that, hit RETURN."
 
-$stdin.gets
-
-
  puts "Opening the file..."
- target = open("text", 'w')
+ target = open("text", 'w+')
 
 # This part does the erasing.
 # puts "Truncating the file.  Goodbye!"
 # target.truncate(0)
 
-puts "Now I'm going to ask you for three lines."
+target.write("This is line one. \n This is line two. \n This is line three.")
 
-print "line 1: "
-line1 = $stdin.gets.chomp
-print "line 2: "
-line2 = $stdin.gets.chomp
-print "line 3: "
-line3 = $stdin.gets.chomp
-
-puts "I'm going to write these to the file."
-
-# Write these as one line of code
-target.write(line1)
- target.write("\n")
- target.write(line2)
- target.write("\n")
- target.write(line3)
- target.write("\n")
+# make file open to read the whole thing. rewind sets the cursor back to the
+#  beginning of the file. readline reads line by line. One readline only
+#  reads the first line. 
+target.rewind
+puts target.readline
+puts target.readline
+puts target.readline
 
 puts "And finally, we close it."
 target.close
