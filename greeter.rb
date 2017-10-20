@@ -1,3 +1,8 @@
+def greet(name)
+  greetings = ["Hello", "Hi", "Ohai", "ZOMG"].shuffle
+  "#{greetings.first} #{name}!"
+end
+
 def greeter
   puts "Hello. What's your first name? "
   print ' Type your first name. > '
@@ -21,3 +26,4 @@ end
 #puts greeter
 puts '******'
 puts short_greeter
+puts greet("Matty")
