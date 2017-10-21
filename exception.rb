@@ -23,6 +23,7 @@ rescue Exception => e
   puts e.backtrace.inspect
 end
 
+
 raise_and_rescue
 puts "********"
 raise_exception
