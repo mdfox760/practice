@@ -10,7 +10,7 @@ class Name
     first[0] = first[0].chr.capitalize
     @first = first
   end
-  
+
   # When someone tries to set a last name, enforce rules about it.
   def last=(last)
     if last == nil or last.size == 0
@@ -18,11 +18,11 @@ class Name
     end
     @last = last
   end
-  
+
   def full_name
     "#{@first} #{@last}"
   end
-  
+
   # Delegate to the setter methods instead of setting the instance
   # variables directly
   def initialize(first, last)
@@ -33,17 +33,12 @@ end
 
 jacob = Name.new('Jacob', 'Berendes')
 jacob.first = 'Mary Sue'
-matt.full_name # => "Marry Fox"
 john = Name.new('john', 'von Neumann')
 john.full_name # => "John von Neumann"
 john.first = 'john'
 john.first # => "John"
-john.first = nil
-# ArguementError: Everyone must have a first name.
-Name.new('Kero, international football star and performance artist', nil)
-# ArguementError: Everyone must have a last name.
-
-# HERE IS THE OUTPUT WHEN THE PROGRAM RAN.
-# => validation.rb:7:in `first=': uninitialized constant Name::ArguementError (NameError)
-# Did you mean?  ArgumentError
-#       	from validation.rb:41:in `<main>'
+matt = Name.new('Matt', 'Fox')
+puts john.full_name
+puts matt.first
+puts matt.last
+puts matt.full_name
