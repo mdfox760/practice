@@ -1,11 +1,8 @@
 foods = [ "artichoke", "lettuce", "gin", "whiskey", "pinapple" ]
 arrOfarr = [ ["house", "car", "banana", "tree"], [ "bike", "skateboard", "skates"] ]
 puts foods
-puts
 puts foods.to_s
-puts
 puts foods.join(', ')
-puts
 puts foods.join(' :) ') + ' 8)'
 
 200.times do

@@ -1,7 +1,7 @@
 require 'pg'
-require 'dbi'  
-  
-# conn = PG.connect(hostname, username, password, databasename)  
+require 'dbi'
+
+# conn = PG.connect(hostname, username, password, databasename)
 conn = PG.connect( dbname: 'ruby')  
 conn.exec( "SELECT * FROM student" ) do |result|
   puts "     ID | Name            | Rank"
