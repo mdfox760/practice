@@ -2,12 +2,12 @@ require 'pg'
 require 'dbi'
 
 # conn = PG.connect(hostname, username, password, databasename)
-conn = PG.connect( dbname: 'ruby')  
-conn.exec( "SELECT * FROM student" ) do |result|
-  puts "     ID | Name            | Rank"
+conn = PG.connect( dbname: 'stocks')
+conn.exec( "SELECT * FROM portfolio" ) do |result|
+  puts " Name | \tSymbol | \tSector | \tIndustry "
   result.each do |row|
-    puts " %6d | %-15s | %s " %
-      row.values_at('id', 'name', 'rank')
+    puts " %s | \t%s | \t%s | \t%s " %
+      row.values_at('name', 'symbol', 'sector', 'industry')
   end
 end
 conn.close

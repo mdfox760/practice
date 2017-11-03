@@ -13,13 +13,8 @@
   data.each do |stocks|
     puts "Stock Symbol: #{stocks[:symbol]}
           Stock Name: #{stocks[:name]}
-          Stock LastSale: #{stocks[:lastsale]}
-          Stock Market Cap: #{stocks[:marketcap]}
-          Stock ADR-TSO: #{stocks[:adr_tso]}
-          Stock IPO Year: #{stocks[:ipoyear]}
           Stock Sector: #{stocks[:sector]}
-          Stock Industry: #{stocks[:industry]}
-          Stock Summary Quote: #{stocks[:summary_quote]}"
+          Stock Industry: #{stocks[:industry]}"
   end
 
   puts '---' * 10
@@ -28,6 +23,3 @@
   puts "There are #{data.count} stocks in the list"
   puts '---' * 10
   puts " This is the last stock in the array as a hash. #{data[3195]} "
-  
-
-
