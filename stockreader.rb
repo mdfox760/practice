@@ -18,8 +18,8 @@
   end
 
   puts '---' * 10
-  puts " This is the first stock in the array as a hash. #{data[0]} "
+  puts " This is the first stock in the array as a hash. #{data.first} "
   puts '---' * 10
   puts "There are #{data.count} stocks in the list"
   puts '---' * 10
-  puts " This is the last stock in the array as a hash. #{data[3195]} "
+  puts " This is the last stock in the array as a hash. #{data.last} "
