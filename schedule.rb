@@ -8,8 +8,9 @@ require 'json'
     # puts work
     # puts work.to_s
     # puts work.to_json
-    puts "Todays Schedule: "
+    puts "Todays Fun Schedule: "
     puts schedule[:today_fun]
+    puts "Todays Serious Schedule: "
     puts schedule[:today_serious]
   end
 day_schedule
@@ -21,6 +22,7 @@ puts "*****"
     schedule[:week_end] = "Pack up car. Go camping. Have fun."
     puts "Weeks Schedule: "
     puts schedule[:work_week]
+    puts "Weekend Schedule: "
     puts schedule[:week_end]
     end
 week_schedule
@@ -32,6 +34,7 @@ puts "******"
     schedule[:fun_month_schedule] = "Make money. Spend money."
     puts "Monthly Schedule: "
     puts schedule[:month_schedule]
-    schedule[:fun_month_schedule]
+    puts "Fun Monthly Schedule: "
+    puts schedule[:fun_month_schedule]
   end
 month_schedule
