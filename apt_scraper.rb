@@ -39,7 +39,7 @@ scraper.get(ADDRESS) do |search_page|
   raw_results.each do |result|
     link = result.css('a')[1]
     name = link.text.strip
-    url = "http://sandiego.craigslist.org" + link.attributes["href"].value
+    url = "https://sandiego.craigslist.org/d/apts-housing-for-rent/search/apa" + link.attributes["href"].value
     price = result.search('span.price').text
     location = result.search('span.pnr').text[3..-13]
 
@@ -47,6 +47,7 @@ scraper.get(ADDRESS) do |search_page|
 
     # Save results
     results << [name, url, price, location]
+    puts results
 
     CSV.open( "filename.csv", "w+" ) do |csv_file|
       results.each do |row|
