@@ -1,0 +1,10 @@
+This is some text testing file_reader.rb.
+
+I don't know if this will work, but I'll give it a shot.
+I would like to set this up to write to the file as well.
+O.k., that should be enough text to test.
+This should append to the last line of of the file.
+This should append to the last line of of the file.
+This was written in irb.
+This was written by the program.
+This was written by the program.
