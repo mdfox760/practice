@@ -10,3 +10,5 @@ class Name
 end
 
 n = Name.new
+my_name = "Matt Fox"
+puts n.my_name

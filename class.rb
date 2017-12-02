@@ -1,9 +1,9 @@
 class Me
   def initialize
-    @name = "Matt 'Action' Fox"
-    @address = "Temecula"
-    @address2 = "Oceanside"
-    @email = "mdfox760@email.com"
+    @name = "Matt Fox"
+    @home_address = "Temecula"
+    @work_address = "Oceanside"
+    @email = "me@email.com"
     @phone = "000-000-0000"
   end
 
@@ -19,20 +19,20 @@ class Me
     @email
   end
 
-  def address
-    @address
+  def home_address
+    @home_address
   end
 
-  def address2
-    @address2
+  def work_address
+    @work_address
   end
 end
 
 m = Me.new
 
 puts m.inspect
-puts m.name
-puts m.email
-puts m.phone
-puts m.address
-puts m.address2
+puts "Name: " + m.name
+puts "Email: " + m.email
+puts "Phone: " + m.phone
+puts "Home address: " + m.home_address
+puts "Work address: " + m.work_address
