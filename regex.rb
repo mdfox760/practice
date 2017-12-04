@@ -104,3 +104,77 @@ p text.scan(/\(.*\)/)
 p text.scan(/\((.*)\)/)
 
 # Very tough to learn. Just practice.
+
+line1 = "Cats are smarter than dogs";
+line2 = "Dogs also like meat";
+
+if ( line1 =~ /Cats(.*)/ )
+   puts "Line1 contains Cats"
+ else
+   puts "Line1 has no Cats."
+end
+if ( line2 =~ /Cats(.*)/ )
+   puts "Line2 contains Dogs"
+ else
+   puts "Line2 has no Dogs."
+end
+
+# Search
+phone = "951-555-2017" # This is a phone number.
+if (phone =~ /951(.*)/ )
+  puts "phone has 951 area code."
+else
+  puts "phone area code is not found."
+end
+if (phone =~ /760(.*)/ )
+  puts "phone has 760 area code."
+else
+  puts "phone area code is not 760"
+end
+
+peanuts = "peanuts"
+if /pea/.match('peanuts') === true
+  puts "'pea' is a match for peanuts"
+else
+  puts "'pea' in not a match for peanuts"
+end
+
+peanuts = "peanuts"
+if /pea/.match('peanuts')
+  puts "'pea' is a match for peanuts"
+else
+  puts "'pea' in not a match for peanuts"
+end
+
+if /pea/.match('phone') === true
+  puts "'pea' is a match for phone"
+else
+  puts "'pea' in not a match for phone"
+end
+
+if /pea/.match('phone')
+  puts "'pea' is a match for phone"
+else
+  puts "'pea' in not a match for phone"
+end
+
+# Capture groups
+capture = /\$(?<dollars>\d+)\.(?<cents>\d+)/.match("$3.67")
+puts capture
+#<MatchData "$3.67" dollars:"3" cents:"67"> in irb
+# returns $3.67 in ruby.
+capture_group = /\$(?<dollars>\d+)\.(?<cents>\d+)/.match("$3.67")[:dollars]
+
+puts capture_group
+#=> "3"
+
+# Substitution
+subbing_letters = "Super guper bag".gsub "g", "d"
+# => "Super duper bad"
+puts subbing_letters
+subbing_weird = "Ruby is 13%".gsub( '%' ) {|c| c.ord.to_s + ' ' }
+# => "Ruby is 1337"
+puts subbing_weird
+subbing_words = "Terribly complex".gsub "complex", "simple"
+# => "Terribly simple"
+puts subbing_words
