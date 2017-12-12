@@ -25,7 +25,7 @@ class User
     def loadFromInput()
         @name = readInput('Enter User Name: ')
         @age = Integer(readInput('Enter Age: '))
-        @height = Float(readInput('Enter Height (in feet): '))
+        @height = String(readInput('Enter Height (in feet and inches with foot and inch marks): '))
         @weight = Integer(readInput('Enter Weight: '))
     end
 
@@ -42,7 +42,7 @@ class User
         f = File.new('user.info', 'r')
         @name = f.readline
         @age = Integer(f.readline)
-        @height = Float(f.readline)
+        @height = String(f.readline)
         @weight = Integer(f.readline)
     end
 end

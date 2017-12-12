@@ -9,6 +9,12 @@ class Portfolio
     @stock_list = stock_list
   end
 
+  def history
+    # May just include start_date.
+    # stock = StockQuote::Stock.history("symbol", "start_date", "end_date")
+    mastercard = StockQuote::Stock.history("MA", "December 01, 2017")
+  end
+
   def name
     @name
   end
@@ -68,22 +74,16 @@ class Portfolio
     #       end
     # list.values.to_a
     # list.values.split
-    list = StockQuote::Stock.quote(%w[ AAPL AMZN GOOG GOOGL AXP BABA BAC BIDU COP
-  XOM FB FCX GIMO GS JD JPM LVS MA MGM MSFT NFLX NVDA
-   PYPL RP SEND SHOP SNAP SQ SPLK SBUX SOHU TSLA TWTR
-    X VEEV V WB WFC WYNN WYNMY ])
+  #  list = StockQuote::Stock.quote(%w[ AAPL AMZN GOOG GOOGL AXP BABA BAC BIDU COP
+  # XOM FB FCX GIMO GS JD JPM LVS MA MGM MSFT NFLX NVDA PYPL RP SEND SHOP SNAP SQ
+  #  SPLK SBUX SOHU TSLA TWTR X VEEV V WB WFC WYNN WYNMY ])
     visa = StockQuote::Stock.quote("V")
     puts "Symbol: " + visa.symbol
     puts "Stock last: " + visa.l
     puts "Stock open: " + visa.op
     puts "Stock PE: " + visa.pe
+    puts "Reuters :" + visa.management.to_s
     puts "\n"
-    goog = StockQuote::Stock.quote("GOOG")
-    puts "Symbol: " + goog.symbol
-    puts "Stock last: " + goog.l
-    puts "Stock open: " + goog.op
-    puts "Stock PE: " + goog.pe
-    puts "Reuters :" + goog.management.to_s
     #stock.each do |symbol, quote|
     #  puts "#{symbol}: #{quote}"
     #end
@@ -102,7 +102,8 @@ end
 
 p = Portfolio.new("Wishlist", "All the stocks")
 # p2 = Portfolio.new("portfolio_1", "Less than 10")
-
+puts "Mastercard history: "
+puts p.history
 # puts p.inspect_stock_list
 puts p.stock_list
 # puts p2.inspect_stock_list
