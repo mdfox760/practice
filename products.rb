@@ -1,6 +1,16 @@
 class Product
 
-  def items
+  def initialize
+    @distributor
+    @item
+    @price
+    @vendor
+  end
+
+  def distributor
+  end
+
+  def item
     items = "Shirts, Hats and Hoodies"
 
     puts "SKU'S"
@@ -13,7 +23,7 @@ class Product
     skus.count
   end
 
-  def prices
+  def price
     wholesale_shirts = { "shirts" => "$9.99" }
     wholesale_hats = { "hats" => "$12.99"}
     wholesale_hoodies = { "hoodies" => "$19.99" }
@@ -33,7 +43,7 @@ class Product
     puts retail_shirts
   end
 
-  def vendors
+  def vendor
     shirts = { "Joe's shirts" => "contact = Joe Smith \tphone = 951-555-5555 \n\taddress = 123 Main st., Temecula, CA. 92592 \n\temail = joe@email.com" }
 
     hats = { "Happy Hats" => "contact = Debbie Dell \tphone = 951-555-5556 \n\taddress = 123 Elm st., Temecula, CA. 92591 \n\temail = deb@email.com" }
