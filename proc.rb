@@ -150,3 +150,13 @@ profile 'count to a million' do
     number = number + 1
   end
 end
+
+a_proc = Proc.new { |scalar, *values| values.map {|value| value*scaler } }
+p a_proc.call(9, 1, 2, 3)
+
+def fred(param)
+  proc {}
+end
+
+b = fred(99)
+p eval("param", b.binding)
