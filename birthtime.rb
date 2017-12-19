@@ -9,3 +9,4 @@ p File.stat("testfile").birthtime
 p File.stat("testfile").mtime
 p File.stat("testfile").ctime
 p File.stat("testfile").atime
+p File.stat("/etc/passwd").inspect
