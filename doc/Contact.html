@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>class Contact - RDoc Documentation</title>
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+  var index_rel_prefix = "./";
+</script>
+
+<script src="./js/jquery.js"></script>
+<script src="./js/darkfish.js"></script>
+
+<link href="./css/fonts.css" rel="stylesheet">
+<link href="./css/rdoc.css" rel="stylesheet">
+
+
+
+<body id="top" role="document" class="class">
+<nav role="navigation">
+  <div id="project-navigation">
+    <div id="home-section" role="region" title="Quick navigation" class="nav-section">
+  <h2>
+    <a href="./index.html" rel="home">Home</a>
+  </h2>
+
+  <div id="table-of-contents-navigation">
+    <a href="./table_of_contents.html#pages">Pages</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </div>
+</div>
+
+    <div id="search-section" role="search" class="project-section initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <div id="search-field-wrapper">
+      <input id="search-field" role="combobox" aria-label="Search"
+             aria-autocomplete="list" aria-controls="search-results"
+             type="text" name="search" placeholder="Search" spellcheck="false"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </div>
+
+    <ul id="search-results" aria-label="Search Results"
+        aria-busy="false" aria-expanded="false"
+        aria-atomic="false" class="initially-hidden"></ul>
+  </form>
+</div>
+
+  </div>
+
+  
+<div class="nav-section">
+  <h3>Table of Contents</h3>
+
+  <ul class="link-list" role="directory">
+    <li><a href="#class-Contact-label-begin">begin</a>
+    <li><a href="#class-Contact-label-end">end</a>
+  </ul>
+</div>
+
+
+  <div id="class-metadata">
+    
+    <div id="parent-class-section" class="nav-section">
+  <h3>Parent</h3>
+
+  
+  <p class="link"><a href="Object.html">Object</a>
+  
+</div>
+
+    
+    
+    <!-- Method Quickref -->
+<div id="method-list-section" class="nav-section">
+  <h3>Methods</h3>
+
+  <ul class="link-list" role="directory">
+    
+    <li ><a href="#method-i-addresses">#addresses</a>
+    
+    <li ><a href="#method-i-emails">#emails</a>
+    
+    <li ><a href="#method-i-names">#names</a>
+    
+    <li ><a href="#method-i-phones">#phones</a>
+    
+  </ul>
+</div>
+
+  </div>
+</nav>
+
+<main role="main" aria-labelledby="class-Contact">
+  <h1 id="class-Contact" class="class">
+    class Contact
+  </h1>
+
+  <section class="description">
+    
+<h1 id="class-Contact-label-begin">begin<span><a href="#class-Contact-label-begin">&para;</a> <a href="#top">&uarr;</a></span></h1>
+
+<pre>Makes a class that uses hashes, arrays, blocks and symbols together. Trying to put
+the stuff I&#39;ve learned so far into a single program. Change the code at the bottom
+as you wish.</pre>
+
+<h1 id="class-Contact-label-end">end<span><a href="#class-Contact-label-end">&para;</a> <a href="#top">&uarr;</a></span></h1>
+
+  </section>
+
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+
+    
+
+    
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section">
+       <header>
+         <h3>Public Instance Methods</h3>
+       </header>
+
+    
+      <div id="method-i-addresses" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">addresses</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="addresses-source">
+            <pre><span class="ruby-comment"># File CHA.rb, line 51</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">addresses</span>
+  <span class="ruby-identifier">address</span> = { <span class="ruby-value">:street</span> <span class="ruby-operator">=&gt;</span> <span class="ruby-string">&quot;123 Main st.&quot;</span>, <span class="ruby-value">:city</span> <span class="ruby-operator">=&gt;</span> <span class="ruby-string">&quot;Hometown&quot;</span>, <span class="ruby-value">:zipcode</span> <span class="ruby-operator">=&gt;</span> <span class="ruby-string">&quot;00000&quot;</span>, <span class="ruby-value">:state</span> <span class="ruby-operator">=&gt;</span> <span class="ruby-string">&quot;CA&quot;</span>, <span class="ruby-value">:country</span> <span class="ruby-operator">=&gt;</span> <span class="ruby-string">&quot;US&quot;</span> }
+  <span class="ruby-identifier">work_address</span> = { <span class="ruby-value">:work_street</span> <span class="ruby-operator">=&gt;</span> <span class="ruby-string">&quot;123 Main st.&quot;</span>, <span class="ruby-value">:work_city</span> <span class="ruby-operator">=&gt;</span> <span class="ruby-string">&quot;worktown&quot;</span>, <span class="ruby-value">:work_zipcode</span> <span class="ruby-operator">=&gt;</span> <span class="ruby-string">&quot;00000&quot;</span>, <span class="ruby-value">:work_state</span> <span class="ruby-operator">=&gt;</span> <span class="ruby-string">&quot;CA&quot;</span>,
+   <span class="ruby-value">:work_country</span> <span class="ruby-operator">=&gt;</span> <span class="ruby-string">&quot;US&quot;</span>}
+
+  <span class="ruby-identifier">address2</span> = { <span class="ruby-value">:street2</span> <span class="ruby-operator">=&gt;</span> <span class="ruby-string">&quot;23 Baker rd.&quot;</span>, <span class="ruby-value">:city</span> <span class="ruby-operator">=&gt;</span> <span class="ruby-string">&quot;London&quot;</span>, <span class="ruby-value">:zipcode</span> <span class="ruby-operator">=&gt;</span> <span class="ruby-string">&quot;00000&quot;</span>, <span class="ruby-value">:state</span> <span class="ruby-operator">=&gt;</span> <span class="ruby-string">&quot;LondonTown&quot;</span>,
+     <span class="ruby-value">:country</span> <span class="ruby-operator">=&gt;</span> <span class="ruby-string">&quot;UK&quot;</span> }
+
+  <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;Here are some addresses listed : &quot;</span>
+
+  <span class="ruby-identifier">address</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">a</span><span class="ruby-operator">|</span>
+    <span class="ruby-identifier">puts</span> <span class="ruby-identifier">a</span>.<span class="ruby-identifier">to_s</span>
+  <span class="ruby-keyword">end</span>
+
+  <span class="ruby-identifier">work_address</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">wa</span><span class="ruby-operator">|</span>
+    <span class="ruby-identifier">puts</span> <span class="ruby-identifier">wa</span>.<span class="ruby-identifier">to_s</span>
+  <span class="ruby-keyword">end</span>
+
+  <span class="ruby-identifier">address2</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">a2</span><span class="ruby-operator">|</span>
+    <span class="ruby-identifier">puts</span> <span class="ruby-identifier">a2</span>.<span class="ruby-identifier">to_s</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-emails" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">emails</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="emails-source">
+            <pre><span class="ruby-comment"># File CHA.rb, line 74</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">emails</span>
+  <span class="ruby-identifier">email</span> = { <span class="ruby-value">:email</span> <span class="ruby-operator">=&gt;</span> <span class="ruby-string">&quot;sample@email.com&quot;</span> }
+  <span class="ruby-identifier">work_email</span> = { <span class="ruby-value">:work_email</span> <span class="ruby-operator">=&gt;</span> <span class="ruby-string">&quot;work_email@email.com&quot;</span> }
+  <span class="ruby-identifier">email2</span> = { <span class="ruby-value">:email2</span> <span class="ruby-operator">=&gt;</span> <span class="ruby-string">&quot;sample2@email.com&quot;</span> }
+  <span class="ruby-identifier">work_email2</span> = { <span class="ruby-value">:work_email2</span> <span class="ruby-operator">=&gt;</span> <span class="ruby-string">&quot;work_email2@email.com&quot;</span> }
+  <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;Here are some emails listed : &quot;</span>
+
+  <span class="ruby-identifier">email</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">e</span><span class="ruby-operator">|</span>
+    <span class="ruby-identifier">puts</span> <span class="ruby-identifier">e</span>.<span class="ruby-identifier">to_s</span>
+  <span class="ruby-keyword">end</span>
+
+  <span class="ruby-identifier">work_email</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">we</span><span class="ruby-operator">|</span>
+    <span class="ruby-identifier">puts</span> <span class="ruby-identifier">we</span>.<span class="ruby-identifier">to_s</span>
+  <span class="ruby-keyword">end</span>
+
+  <span class="ruby-identifier">email2</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">e2</span><span class="ruby-operator">|</span>
+    <span class="ruby-identifier">puts</span> <span class="ruby-identifier">e2</span>.<span class="ruby-identifier">to_s</span>
+  <span class="ruby-keyword">end</span>
+
+  <span class="ruby-identifier">work_email2</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">we2</span><span class="ruby-operator">|</span>
+    <span class="ruby-identifier">puts</span> <span class="ruby-identifier">we2</span>.<span class="ruby-identifier">to_s</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-names" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">names</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="names-source">
+            <pre><span class="ruby-comment"># File CHA.rb, line 4</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">names</span>
+
+  <span class="ruby-identifier">phone</span> = { <span class="ruby-value">:phone</span> <span class="ruby-operator">=&gt;</span> <span class="ruby-string">&quot;555-555-5555&quot;</span> }
+  <span class="ruby-identifier">phone2</span> = { <span class="ruby-value">:phone2</span> <span class="ruby-operator">=&gt;</span> <span class="ruby-string">&quot;555-555-5556&quot;</span> }
+  <span class="ruby-identifier">worker_phone</span> = { <span class="ruby-value">:worker_phone</span> <span class="ruby-operator">=&gt;</span> <span class="ruby-string">&quot;555-555-5557&quot;</span>}
+
+  <span class="ruby-identifier">people</span> = [ <span class="ruby-string">&quot;John Jones&quot;</span>, <span class="ruby-string">&quot;Fred Flintstone&quot;</span>, <span class="ruby-string">&quot;Sammy Silk&quot;</span>, <span class="ruby-identifier">phone</span> ] <span class="ruby-operator">+</span> [ <span class="ruby-string">&quot;Charles Camp&quot;</span>, <span class="ruby-string">&quot;Lori Lode&quot;</span>, <span class="ruby-identifier">phone2</span> ]
+  <span class="ruby-identifier">work_people</span> = [ <span class="ruby-string">&quot;Pete Polk&quot;</span>, <span class="ruby-string">&quot;Rita Rudd&quot;</span>, <span class="ruby-string">&quot;Angie Apple&quot;</span>, <span class="ruby-identifier">worker_phone</span> ]
+
+  <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;Here are some people listed : &quot;</span>
+
+  <span class="ruby-identifier">people</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">p</span><span class="ruby-operator">|</span>
+    <span class="ruby-identifier">puts</span> <span class="ruby-identifier">p</span>.<span class="ruby-identifier">to_s</span>
+  <span class="ruby-keyword">end</span>
+
+  <span class="ruby-identifier">work_people</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">wp</span><span class="ruby-operator">|</span>
+    <span class="ruby-identifier">puts</span> <span class="ruby-identifier">wp</span>.<span class="ruby-identifier">to_s</span>
+  <span class="ruby-keyword">end</span>
+
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-phones" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">phones</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="phones-source">
+            <pre><span class="ruby-comment"># File CHA.rb, line 25</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">phones</span>
+  <span class="ruby-identifier">phone</span> = { <span class="ruby-value">:phone</span> <span class="ruby-operator">=&gt;</span> <span class="ruby-string">&quot;555-555-5555&quot;</span> }
+  <span class="ruby-identifier">work_phone</span> = { <span class="ruby-value">:work_phone</span> <span class="ruby-operator">=&gt;</span> <span class="ruby-string">&quot;555-555-5556&quot;</span> }
+  <span class="ruby-identifier">phone2</span> = { <span class="ruby-value">:phone2</span> <span class="ruby-operator">=&gt;</span> <span class="ruby-string">&quot;555-555-5555&quot;</span> }
+  <span class="ruby-identifier">work_phone2</span> = { <span class="ruby-value">:work_phone2</span> <span class="ruby-operator">=&gt;</span> <span class="ruby-string">&quot;555-555-5556&quot;</span> }
+
+  <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;Here are some phones listed : &quot;</span>
+
+  <span class="ruby-identifier">phone</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">ph</span><span class="ruby-operator">|</span>
+    <span class="ruby-identifier">puts</span> <span class="ruby-identifier">ph</span>.<span class="ruby-identifier">to_s</span>
+  <span class="ruby-keyword">end</span>
+
+  <span class="ruby-identifier">work_phone</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">wph</span><span class="ruby-operator">|</span>
+    <span class="ruby-identifier">puts</span> <span class="ruby-identifier">wph</span>.<span class="ruby-identifier">to_s</span>
+  <span class="ruby-keyword">end</span>
+
+  <span class="ruby-identifier">phone2</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">ph2</span><span class="ruby-operator">|</span>
+    <span class="ruby-identifier">puts</span> <span class="ruby-identifier">ph2</span>.<span class="ruby-identifier">to_s</span>
+  <span class="ruby-keyword">end</span>
+
+  <span class="ruby-identifier">work_phone2</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">wph2</span><span class="ruby-operator">|</span>
+    <span class="ruby-identifier">puts</span> <span class="ruby-identifier">wph2</span>.<span class="ruby-identifier">to_s</span>
+  <span class="ruby-keyword">end</span>
+
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+    </section>
+  
+  </section>
+</main>
+
+
+<footer id="validator-badges" role="contentinfo">
+  <p><a href="https://validator.w3.org/check/referer">Validate</a>
+  <p>Generated by <a href="https://ruby.github.io/rdoc/">RDoc</a> 6.0.0.
+  <p>Based on <a href="http://deveiate.org/projects/Darkfish-RDoc/">Darkfish</a> by <a href="http://deveiate.org">Michael Granger</a>.
+</footer>
+

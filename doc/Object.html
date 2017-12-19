@@ -1,0 +1,2141 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>class Object - RDoc Documentation</title>
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+  var index_rel_prefix = "./";
+</script>
+
+<script src="./js/jquery.js"></script>
+<script src="./js/darkfish.js"></script>
+
+<link href="./css/fonts.css" rel="stylesheet">
+<link href="./css/rdoc.css" rel="stylesheet">
+
+
+
+<body id="top" role="document" class="class">
+<nav role="navigation">
+  <div id="project-navigation">
+    <div id="home-section" role="region" title="Quick navigation" class="nav-section">
+  <h2>
+    <a href="./index.html" rel="home">Home</a>
+  </h2>
+
+  <div id="table-of-contents-navigation">
+    <a href="./table_of_contents.html#pages">Pages</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </div>
+</div>
+
+    <div id="search-section" role="search" class="project-section initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <div id="search-field-wrapper">
+      <input id="search-field" role="combobox" aria-label="Search"
+             aria-autocomplete="list" aria-controls="search-results"
+             type="text" name="search" placeholder="Search" spellcheck="false"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </div>
+
+    <ul id="search-results" aria-label="Search Results"
+        aria-busy="false" aria-expanded="false"
+        aria-atomic="false" class="initially-hidden"></ul>
+  </form>
+</div>
+
+  </div>
+
+  
+
+  <div id="class-metadata">
+    
+    <div id="parent-class-section" class="nav-section">
+  <h3>Parent</h3>
+
+  
+  <p class="link">BasicObject
+  
+</div>
+
+    <div id="includes-section" class="nav-section">
+  <h3>Included Modules</h3>
+
+  <ul class="link-list">
+  
+  
+    <li><span class="include">REXML</span>
+  
+  
+  </ul>
+</div>
+
+    
+    <!-- Method Quickref -->
+<div id="method-list-section" class="nav-section">
+  <h3>Methods</h3>
+
+  <ul class="link-list" role="directory">
+    
+    <li ><a href="#method-i-add">#add</a>
+    
+    <li ><a href="#method-i-angry_boss">#angry_boss</a>
+    
+    <li ><a href="#method-i-bear_room">#bear_room</a>
+    
+    <li ><a href="#method-i-branching">#branching</a>
+    
+    <li ><a href="#method-i-bug">#bug</a>
+    
+    <li ><a href="#method-i-calc_interest">#calc_interest</a>
+    
+    <li ><a href="#method-i-compose">#compose</a>
+    
+    <li ><a href="#method-i-convert">#convert</a>
+    
+    <li ><a href="#method-i-craft_names">#craft_names</a>
+    
+    <li ><a href="#method-i-craft_params">#craft_params</a>
+    
+    <li ><a href="#method-i-cthulhu_room">#cthulhu_room</a>
+    
+    <li ><a href="#method-i-day_schedule">#day_schedule</a>
+    
+    <li ><a href="#method-i-dead">#dead</a>
+    
+    <li ><a href="#method-i-divide">#divide</a>
+    
+    <li ><a href="#method-i-doSelfImportantly">#doSelfImportantly</a>
+    
+    <li ><a href="#method-i-doUntilFalse">#doUntilFalse</a>
+    
+    <li ><a href="#method-i-doubleThis">#doubleThis</a>
+    
+    <li ><a href="#method-i-foo">#foo</a>
+    
+    <li ><a href="#method-i-fortune_teller">#fortune_teller</a>
+    
+    <li ><a href="#method-i-get_binding">#get_binding</a>
+    
+    <li ><a href="#method-i-gold_room">#gold_room</a>
+    
+    <li ><a href="#method-i-greet">#greet</a>
+    
+    <li ><a href="#method-i-greeter">#greeter</a>
+    
+    <li ><a href="#method-i-lines">#lines</a>
+    
+    <li ><a href="#method-i-little_pest">#little_pest</a>
+    
+    <li ><a href="#method-i-looping">#looping</a>
+    
+    <li ><a href="#method-i-main">#main</a>
+    
+    <li ><a href="#method-i-maybeDo">#maybeDo</a>
+    
+    <li ><a href="#method-i-month_schedule">#month_schedule</a>
+    
+    <li ><a href="#method-i-more_people">#more_people</a>
+    
+    <li ><a href="#method-i-multiply">#multiply</a>
+    
+    <li ><a href="#method-i-print_none">#print_none</a>
+    
+    <li ><a href="#method-i-print_one">#print_one</a>
+    
+    <li ><a href="#method-i-print_two">#print_two</a>
+    
+    <li ><a href="#method-i-print_two_again">#print_two_again</a>
+    
+    <li ><a href="#method-i-proc_from">#proc_from</a>
+    
+    <li ><a href="#method-i-profile">#profile</a>
+    
+    <li ><a href="#method-i-raise_and_rescue">#raise_and_rescue</a>
+    
+    <li ><a href="#method-i-raise_exception">#raise_exception</a>
+    
+    <li ><a href="#method-i-short_greeter">#short_greeter</a>
+    
+    <li ><a href="#method-i-simple_interest">#simple_interest</a>
+    
+    <li ><a href="#method-i-start">#start</a>
+    
+    <li ><a href="#method-i-subtract">#subtract</a>
+    
+    <li ><a href="#method-i-teacher">#teacher</a>
+    
+    <li ><a href="#method-i-twiceDo">#twiceDo</a>
+    
+    <li ><a href="#method-i-week_schedule">#week_schedule</a>
+    
+    <li ><a href="#method-i-while_loop">#while_loop</a>
+    
+  </ul>
+</div>
+
+  </div>
+</nav>
+
+<main role="main" aria-labelledby="class-Object">
+  <h1 id="class-Object" class="class">
+    class Object
+  </h1>
+
+  <section class="description">
+    
+  </section>
+
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+    <section class="constants-list">
+      <header>
+        <h3>Constants</h3>
+      </header>
+      <dl>
+      
+        <dt id="ADDRESS">ADDRESS
+        
+        <dd><p>hardcoding an address for the scraper</p>
+        
+      
+        <dt id="BASE_URL">BASE_URL
+        
+        <dd>
+        
+      
+        <dt id="Customer">Customer
+        
+        <dd><p>Creates a subclass and displays verically</p>
+        
+      
+        <dt id="PHRASES">PHRASES
+        
+        <dd>
+        
+      
+        <dt id="PHRASE_FIRST">PHRASE_FIRST
+        
+        <dd>
+        
+      
+        <dt id="WORDS">WORDS
+        
+        <dd>
+        
+      
+        <dt id="WORD_URL">WORD_URL
+        
+        <dd>
+        
+      
+      </dl>
+    </section>
+    
+
+    
+
+    
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section">
+       <header>
+         <h3>Public Instance Methods</h3>
+       </header>
+
+    
+      <div id="method-i-add" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">add</span><span
+            class="method-args">(a, b)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="add-source">
+            <pre><span class="ruby-comment"># File ex21.rb, line 1</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">add</span>(<span class="ruby-identifier">a</span>, <span class="ruby-identifier">b</span>)
+  <span class="ruby-identifier">puts</span> <span class="ruby-node">&quot;Adding #{a} + #{b}&quot;</span>
+  <span class="ruby-keyword">return</span> <span class="ruby-identifier">a</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">b</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-angry_boss" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">angry_boss</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="angry_boss-source">
+            <pre><span class="ruby-comment"># File angry_boss.rb, line 1</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">angry_boss</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;Boss: &#39;You&#39;re always bothering me. Whaddaya want?&#39; &quot;</span>
+  <span class="ruby-identifier">print</span> <span class="ruby-string">&#39; &gt; &#39;</span>
+  <span class="ruby-identifier">reply</span> = <span class="ruby-identifier">gets</span>.<span class="ruby-identifier">chomp</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;WHADDAYA MEAN, &#39;&quot;</span>  <span class="ruby-operator">+</span> <span class="ruby-identifier">reply</span> <span class="ruby-operator">+</span>  <span class="ruby-string">&quot;&#39;?! YOU&#39;RE FIRED!&quot;</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-bear_room" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">bear_room</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="bear_room-source">
+            <pre><span class="ruby-comment"># File ex35.rb, line 28</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">bear_room</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;There is a bear here.&quot;</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;The bear has a bunch of honey.&quot;</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;The fat bear is in front of another door.&quot;</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;How are you going to move the bear?&quot;</span>
+  <span class="ruby-identifier">bear_moved</span> = <span class="ruby-keyword">false</span>
+
+  <span class="ruby-keyword">while</span> <span class="ruby-keyword">true</span>
+    <span class="ruby-identifier">print</span> <span class="ruby-string">&quot;&gt; &quot;</span>
+    <span class="ruby-identifier">choice</span> = <span class="ruby-identifier">$stdin</span>.<span class="ruby-identifier">gets</span>.<span class="ruby-identifier">chomp</span>
+
+    <span class="ruby-keyword">if</span> <span class="ruby-identifier">choice</span> <span class="ruby-operator">==</span> <span class="ruby-string">&quot;take honey&quot;</span>
+      <span class="ruby-identifier">dead</span>(<span class="ruby-string">&quot;The bear looks at you then slaps your face off.&quot;</span>)
+    <span class="ruby-keyword">elsif</span> <span class="ruby-identifier">choice</span> <span class="ruby-operator">==</span> <span class="ruby-string">&quot;taunt bear&quot;</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">bear_moved</span>
+      <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;The bear has moved from the door. You can go through it now.&quot;</span>
+      <span class="ruby-identifier">bear_moved</span> <span class="ruby-operator">==</span> <span class="ruby-keyword">true</span>
+    <span class="ruby-keyword">elsif</span> <span class="ruby-identifier">choice</span> <span class="ruby-operator">==</span> <span class="ruby-string">&quot;taunt bear&quot;</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-operator">!</span><span class="ruby-identifier">bear_moved</span>
+      <span class="ruby-identifier">dead</span>(<span class="ruby-string">&quot;The bear gets pissed off and chews your leg off.&quot;</span>)
+    <span class="ruby-keyword">elsif</span> <span class="ruby-identifier">choice</span> <span class="ruby-operator">==</span> <span class="ruby-string">&quot;open door&quot;</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">bear_moved</span>
+      <span class="ruby-identifier">gold_room</span>
+    <span class="ruby-keyword">else</span>
+      <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;I got no idea what that means.&quot;</span>
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-branching" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">branching</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Branching</p>
+          
+          
+
+          
+          <div class="method-source-code" id="branching-source">
+            <pre><span class="ruby-comment"># File branching.rb, line 2</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">branching</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;Hello, what&#39;s your name?&quot;</span>
+  <span class="ruby-identifier">name</span> = <span class="ruby-identifier">gets</span>.<span class="ruby-identifier">chomp</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-string">&#39;Hello, &#39;</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">name</span>.<span class="ruby-identifier">capitalize</span> <span class="ruby-operator">+</span> <span class="ruby-string">&#39;.&#39;</span>
+  <span class="ruby-keyword">if</span> (<span class="ruby-identifier">name</span> <span class="ruby-operator">==</span> <span class="ruby-string">&#39;Matt&#39;</span> <span class="ruby-keyword">or</span> <span class="ruby-identifier">name</span> <span class="ruby-operator">==</span> <span class="ruby-string">&#39;matt&#39;</span>)
+    <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;What a great name!&quot;</span>
+  <span class="ruby-keyword">else</span> <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;Nice to meet you!&quot;</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-bug" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">bug</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="bug-source">
+            <pre><span class="ruby-comment"># File bug.rb, line 1</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">bug</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;This room is full of gold. How much do you take?&quot;</span>
+
+  <span class="ruby-identifier">print</span> <span class="ruby-string">&quot;&gt; &quot;</span>
+  <span class="ruby-identifier">choice</span> = <span class="ruby-identifier">$stdin</span>.<span class="ruby-identifier">gets</span>.<span class="ruby-identifier">chomp</span>
+
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">choice</span>.<span class="ruby-identifier">include?</span> <span class="ruby-string">&quot;0&quot;</span> <span class="ruby-operator">||</span> <span class="ruby-string">&quot;1&quot;</span>
+    <span class="ruby-identifier">how_much</span> = <span class="ruby-identifier">choice</span>.<span class="ruby-identifier">to_i</span>
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-identifier">dead</span>(<span class="ruby-string">&quot;Man, learn to type a number.&quot;</span>)
+  <span class="ruby-keyword">end</span>
+
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">how_much</span> <span class="ruby-operator">&lt;</span> <span class="ruby-value">50</span>
+    <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;Nice, you&#39;re not greedy, you win!&quot;</span>
+    <span class="ruby-identifier">exit</span>(<span class="ruby-value">0</span>)
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-identifier">dead</span>(<span class="ruby-string">&quot;You greedy bastard!&quot;</span>)
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-calc_interest" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">calc_interest</span><span
+            class="method-args">(pv, r, n, y)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>FV = PV * ( 1 + r/p) ^ n * p</p>
+          
+          
+
+          
+          <div class="method-source-code" id="calc_interest-source">
+            <pre><span class="ruby-comment"># File compound_interest.rb, line 8</span>
+<span class="ruby-keyword">def</span>  <span class="ruby-identifier ruby-title">calc_interest</span>(<span class="ruby-identifier">pv</span>, <span class="ruby-identifier">r</span>, <span class="ruby-identifier">n</span>, <span class="ruby-identifier">y</span>)
+        <span class="ruby-identifier">r</span> = <span class="ruby-identifier">r</span> <span class="ruby-operator">/</span> <span class="ruby-value">100</span>                             <span class="ruby-comment"># Convert To Decimal</span>
+        <span class="ruby-identifier">fv</span> = <span class="ruby-identifier">pv</span> <span class="ruby-operator">*</span> (<span class="ruby-value">1</span> <span class="ruby-operator">+</span> (<span class="ruby-identifier">r</span> <span class="ruby-operator">/</span> <span class="ruby-identifier">n</span>))<span class="ruby-operator">**</span>(<span class="ruby-identifier">y</span> <span class="ruby-operator">*</span> <span class="ruby-identifier">n</span>)
+        <span class="ruby-keyword">return</span> <span class="ruby-identifier">fv</span>                               <span class="ruby-comment"># Future Value</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-compose" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">compose</span><span
+            class="method-args">(proc1, proc2)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="compose-source">
+            <pre><span class="ruby-comment"># File proc.rb, line 79</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">compose</span> <span class="ruby-identifier">proc1</span>, <span class="ruby-identifier">proc2</span>
+  <span class="ruby-constant">Proc</span>.<span class="ruby-identifier">new</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">x</span><span class="ruby-operator">|</span>
+    <span class="ruby-identifier">proc2</span>.<span class="ruby-identifier">call</span>(<span class="ruby-identifier">proc1</span>.<span class="ruby-identifier">call</span>(<span class="ruby-identifier">x</span>))
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-convert" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">convert</span><span
+            class="method-args">(snippet, phrase)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="convert-source">
+            <pre><span class="ruby-comment"># File oop_test.rb, line 46</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">convert</span>(<span class="ruby-identifier">snippet</span>, <span class="ruby-identifier">phrase</span>)
+  <span class="ruby-identifier">rand_words</span> = <span class="ruby-constant">WORDS</span>.<span class="ruby-identifier">sort_by</span> {<span class="ruby-identifier">rand</span>}
+  <span class="ruby-identifier">class_names</span> = <span class="ruby-identifier">craft_names</span>(<span class="ruby-identifier">rand_words</span>, <span class="ruby-identifier">snippet</span>, <span class="ruby-regexp">/###/</span>, <span class="ruby-identifier">caps</span>=<span class="ruby-keyword">true</span>)
+  <span class="ruby-identifier">other_names</span> = <span class="ruby-identifier">craft_names</span>(<span class="ruby-identifier">rand_words</span>, <span class="ruby-identifier">snippet</span>, <span class="ruby-regexp">/\*\*\*/</span>)
+  <span class="ruby-identifier">param_names</span> = <span class="ruby-identifier">craft_params</span>(<span class="ruby-identifier">rand_words</span>, <span class="ruby-identifier">snippet</span>, <span class="ruby-regexp">/@@@/</span>)
+
+  <span class="ruby-identifier">results</span> = []
+
+  [<span class="ruby-identifier">snippet</span>, <span class="ruby-identifier">phrase</span>].<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">sentence</span><span class="ruby-operator">|</span>
+    <span class="ruby-comment"># fake class names, also copies sentence</span>
+    <span class="ruby-identifier">result</span> = <span class="ruby-identifier">sentence</span>.<span class="ruby-identifier">gsub</span>(<span class="ruby-regexp">/###/</span>) {<span class="ruby-operator">|</span><span class="ruby-identifier">x</span><span class="ruby-operator">|</span> <span class="ruby-identifier">class_names</span>.<span class="ruby-identifier">pop</span> }
+
+    <span class="ruby-comment">#fake other names</span>
+    <span class="ruby-identifier">result</span>.<span class="ruby-identifier">gsub!</span>(<span class="ruby-regexp">/\*\*\*/</span>) {<span class="ruby-operator">|</span><span class="ruby-identifier">x</span><span class="ruby-operator">|</span> <span class="ruby-identifier">other_names</span>.<span class="ruby-identifier">pop</span> }
+
+    <span class="ruby-comment">#fake parameter lists</span>
+    <span class="ruby-identifier">result</span>.<span class="ruby-identifier">gsub!</span>(<span class="ruby-regexp">/@@@/</span>) {<span class="ruby-operator">|</span><span class="ruby-identifier">x</span><span class="ruby-operator">|</span> <span class="ruby-identifier">param_names</span>.<span class="ruby-identifier">pop</span> }
+
+    <span class="ruby-identifier">results</span>.<span class="ruby-identifier">push</span>(<span class="ruby-identifier">result</span>)
+  <span class="ruby-keyword">end</span>
+
+  <span class="ruby-keyword">return</span> <span class="ruby-identifier">results</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-craft_names" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">craft_names</span><span
+            class="method-args">(rand_words, snippet, pattern, caps=false)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="craft_names-source">
+            <pre><span class="ruby-comment"># File oop_test.rb, line 27</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">craft_names</span>(<span class="ruby-identifier">rand_words</span>, <span class="ruby-identifier">snippet</span>, <span class="ruby-identifier">pattern</span>, <span class="ruby-identifier">caps</span>=<span class="ruby-keyword">false</span>)
+  <span class="ruby-identifier">names</span> = <span class="ruby-identifier">snippet</span>.<span class="ruby-identifier">scan</span>(<span class="ruby-identifier">pattern</span>).<span class="ruby-identifier">map</span> <span class="ruby-keyword">do</span>
+    <span class="ruby-identifier">word</span> = <span class="ruby-identifier">rand_words</span>.<span class="ruby-identifier">pop</span>()
+    <span class="ruby-identifier">caps</span> <span class="ruby-operator">?</span> <span class="ruby-identifier">word</span>.<span class="ruby-identifier">capitilize</span> <span class="ruby-operator">:</span> <span class="ruby-identifier">word</span>
+  <span class="ruby-keyword">end</span>
+
+  <span class="ruby-keyword">return</span> <span class="ruby-identifier">names</span> <span class="ruby-operator">*</span> <span class="ruby-value">2</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-craft_params" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">craft_params</span><span
+            class="method-args">(rand_words, snippet, pattern)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="craft_params-source">
+            <pre><span class="ruby-comment"># File oop_test.rb, line 36</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">craft_params</span>(<span class="ruby-identifier">rand_words</span>, <span class="ruby-identifier">snippet</span>, <span class="ruby-identifier">pattern</span>)
+  <span class="ruby-identifier">names</span> = (<span class="ruby-value">0</span><span class="ruby-operator">...</span><span class="ruby-identifier">snippet</span>.<span class="ruby-identifier">scan</span>(<span class="ruby-identifier">pattern</span>).<span class="ruby-identifier">length</span>).<span class="ruby-identifier">map</span> <span class="ruby-keyword">do</span>
+    <span class="ruby-identifier">param_count</span> = <span class="ruby-identifier">rand</span>(<span class="ruby-value">3</span>) <span class="ruby-operator">+</span> <span class="ruby-value">1</span>
+    <span class="ruby-identifier">params</span> = (<span class="ruby-value">0</span><span class="ruby-operator">...</span><span class="ruby-identifier">param_count</span>).<span class="ruby-identifier">map</span> {<span class="ruby-operator">|</span><span class="ruby-identifier">x</span><span class="ruby-operator">|</span> <span class="ruby-identifier">rand_words</span>.<span class="ruby-identifier">pop</span>() }
+    <span class="ruby-identifier">params</span>.<span class="ruby-identifier">join</span>(<span class="ruby-string">&#39;, &#39;</span>)
+  <span class="ruby-keyword">end</span>
+
+  <span class="ruby-keyword">return</span> <span class="ruby-identifier">names</span> <span class="ruby-operator">*</span> <span class="ruby-value">2</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-cthulhu_room" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">cthulhu_room</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="cthulhu_room-source">
+            <pre><span class="ruby-comment"># File ex35.rb, line 55</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">cthulhu_room</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;Here you see the great evil Cthulhu.&quot;</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;He, it, whatever stares at you and you go insane.&quot;</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;Do you flee for your life or eat your own head?&quot;</span>
+
+  <span class="ruby-identifier">print</span> <span class="ruby-string">&quot;&gt; &quot;</span>
+  <span class="ruby-identifier">choice</span> = <span class="ruby-identifier">$stdin</span>.<span class="ruby-identifier">gets</span>.<span class="ruby-identifier">chomp</span>
+
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">choice</span>.<span class="ruby-identifier">include?</span> <span class="ruby-string">&quot;flee&quot;</span>
+    <span class="ruby-identifier">start</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">choice</span>.<span class="ruby-identifier">include?</span> <span class="ruby-string">&quot;run&quot;</span>
+    <span class="ruby-identifier">start</span>
+  <span class="ruby-keyword">elsif</span> <span class="ruby-identifier">choice</span>.<span class="ruby-identifier">include?</span> <span class="ruby-string">&quot;eat&quot;</span>
+    <span class="ruby-identifier">dead</span>(<span class="ruby-string">&quot;Well, that was tasty!&quot;</span>)
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-identifier">cthulhu_room</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span>
+
+
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">dead</span>(<span class="ruby-identifier">why</span>)
+  <span class="ruby-identifier">puts</span> <span class="ruby-identifier">why</span>, <span class="ruby-string">&quot;Good job!&quot;</span>
+  <span class="ruby-identifier">exit</span>(<span class="ruby-value">0</span>)
+<span class="ruby-keyword">end</span>
+
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">start</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;You are in a dark room.&quot;</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;There is a door to your right and left.&quot;</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;Which one do you take?&quot;</span>
+
+  <span class="ruby-identifier">print</span> <span class="ruby-string">&quot;&gt; &quot;</span>
+  <span class="ruby-identifier">choice</span> = <span class="ruby-identifier">$stdin</span>.<span class="ruby-identifier">gets</span>.<span class="ruby-identifier">chomp</span>
+
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">choice</span> <span class="ruby-operator">==</span> <span class="ruby-string">&quot;left&quot;</span>
+    <span class="ruby-identifier">bear_room</span>
+  <span class="ruby-keyword">elsif</span> <span class="ruby-identifier">choice</span> <span class="ruby-operator">==</span> <span class="ruby-string">&quot;right&quot;</span>
+    <span class="ruby-identifier">cthulhu_room</span>
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-identifier">dead</span>(<span class="ruby-string">&quot;You stumble around the room until you starve.&quot;</span>)
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span>
+
+</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-day_schedule" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">day_schedule</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="day_schedule-source">
+            <pre><span class="ruby-comment"># File schedule.rb, line 3</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">day_schedule</span>
+  <span class="ruby-identifier">schedule</span> = {}
+  <span class="ruby-identifier">schedule</span>[<span class="ruby-value">:today_fun</span>] = <span class="ruby-string">&quot;Buy Booze. Get drunk. Fall asleep.&quot;</span>
+  <span class="ruby-identifier">schedule</span>[<span class="ruby-value">:today_serious</span>] = <span class="ruby-string">&quot;Let dog out. Work. Avoid traffic.&quot;</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-identifier">now</span> = <span class="ruby-constant">Date</span>.<span class="ruby-identifier">today</span>.<span class="ruby-identifier">strftime</span>(<span class="ruby-string">&quot;%a %B %d %Y&quot;</span>)
+  <span class="ruby-comment"># puts work</span>
+  <span class="ruby-comment"># puts work.to_s</span>
+  <span class="ruby-comment"># puts work.to_json</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;Todays Fun Schedule: &quot;</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-identifier">schedule</span>[<span class="ruby-value">:today_fun</span>]
+  <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;Todays Serious Schedule: &quot;</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-identifier">schedule</span>[<span class="ruby-value">:today_serious</span>]
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-dead" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">dead</span><span
+            class="method-args">(why)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="dead-source">
+            <pre><span class="ruby-comment"># File bug.rb, line 21</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">dead</span>(<span class="ruby-identifier">why</span>)
+  <span class="ruby-identifier">puts</span> <span class="ruby-identifier">why</span>, <span class="ruby-string">&quot;Good job!&quot;</span>
+  <span class="ruby-identifier">exit</span>(<span class="ruby-value">0</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-divide" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">divide</span><span
+            class="method-args">(a, b)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="divide-source">
+            <pre><span class="ruby-comment"># File ex21.rb, line 16</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">divide</span>(<span class="ruby-identifier">a</span>, <span class="ruby-identifier">b</span>)
+  <span class="ruby-identifier">puts</span> <span class="ruby-node">&quot;Dividing #{a} / #{b}&quot;</span>
+  <span class="ruby-keyword">return</span> <span class="ruby-identifier">a</span> <span class="ruby-operator">/</span> <span class="ruby-identifier">b</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-doSelfImportantly" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">doSelfImportantly</span><span
+            class="method-args">(someProc)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="doSelfImportantly-source">
+            <pre><span class="ruby-comment"># File proc.rb, line 8</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">doSelfImportantly</span> <span class="ruby-identifier">someProc</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-string">&#39;Everybody just HOLD ON!  I have something to do...&#39;</span>
+  <span class="ruby-identifier">someProc</span>.<span class="ruby-identifier">call</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-string">&#39;Ok everyone, I\&#39;m done.  Go on with what you were doing.&#39;</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-doUntilFalse" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">doUntilFalse</span><span
+            class="method-args">(firstInput, someProc)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="doUntilFalse-source">
+            <pre><span class="ruby-comment"># File proc.rb, line 49</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">doUntilFalse</span> <span class="ruby-identifier">firstInput</span>, <span class="ruby-identifier">someProc</span>
+  <span class="ruby-identifier">input</span>  = <span class="ruby-identifier">firstInput</span>
+  <span class="ruby-identifier">output</span> = <span class="ruby-identifier">firstInput</span>
+
+  <span class="ruby-keyword">while</span> <span class="ruby-identifier">output</span>
+    <span class="ruby-identifier">input</span>  = <span class="ruby-identifier">output</span>
+    <span class="ruby-identifier">output</span> = <span class="ruby-identifier">someProc</span>.<span class="ruby-identifier">call</span> <span class="ruby-identifier">input</span>
+  <span class="ruby-keyword">end</span>
+
+  <span class="ruby-identifier">input</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-doubleThis" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">doubleThis</span><span
+            class="method-args">(num)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="doubleThis-source">
+            <pre><span class="ruby-comment"># File double.rb, line 1</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">doubleThis</span> <span class="ruby-identifier">num</span>
+  <span class="ruby-identifier">numTimes2</span> = <span class="ruby-identifier">num</span><span class="ruby-operator">*</span><span class="ruby-value">2</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-identifier">num</span>.<span class="ruby-identifier">to_s</span> <span class="ruby-operator">+</span> <span class="ruby-string">&#39; doubled is &#39;</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">numTimes2</span>.<span class="ruby-identifier">to_s</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-foo" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">foo</span><span
+            class="method-args">(*my_string)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>variable number of parameters example The asterisk is actually taking all
+arguments you send to the method and assigning them to an array named
+my_string as shown below The do end is a Ruby block which we talk in length
+later</p>
+          
+          
+
+          
+          <div class="method-source-code" id="foo-source">
+            <pre><span class="ruby-comment"># File vararg.rb, line 5</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">foo</span>(<span class="ruby-operator">*</span><span class="ruby-identifier">my_string</span>)
+  <span class="ruby-identifier">my_string</span>.<span class="ruby-identifier">inspect</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-fortune_teller" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">fortune_teller</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="fortune_teller-source">
+            <pre><span class="ruby-comment"># File branching.rb, line 12</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">fortune_teller</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;I am a fortune teller. What&#39;s your name?&quot;</span>
+  <span class="ruby-identifier">print</span> <span class="ruby-string">&#39;Type in your name: &gt; &#39;</span>
+  <span class="ruby-identifier">name</span> = <span class="ruby-identifier">gets</span>.<span class="ruby-identifier">chomp</span>
+  <span class="ruby-keyword">if</span> (<span class="ruby-identifier">name</span> <span class="ruby-operator">==</span> <span class="ruby-string">&#39;Matt&#39;</span> <span class="ruby-keyword">or</span> <span class="ruby-identifier">name</span> <span class="ruby-operator">==</span> <span class="ruby-string">&#39;matt&#39;</span>)
+    <span class="ruby-identifier">puts</span> <span class="ruby-string">&#39;I see great things in your future.&#39;</span>
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-identifier">puts</span> <span class="ruby-string">&#39;Your future is .... Oh my! Look at the time!&#39;</span>
+    <span class="ruby-identifier">puts</span> <span class="ruby-string">&#39;I really have to go, sorry.&#39;</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-get_binding" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">get_binding</span><span
+            class="method-args">(param)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="get_binding-source">
+            <pre><span class="ruby-comment"># File binding.rb, line 21</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">get_binding</span>(<span class="ruby-identifier">param</span>)
+  <span class="ruby-identifier">binding</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-gold_room" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">gold_room</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="gold_room-source">
+            <pre><span class="ruby-comment"># File ex35.rb, line 1</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">gold_room</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;This room is full of gold. How much do you take?&quot;</span>
+
+  <span class="ruby-identifier">print</span> <span class="ruby-string">&quot;&gt; &quot;</span>
+  <span class="ruby-identifier">choice</span> = <span class="ruby-identifier">$stdin</span>.<span class="ruby-identifier">gets</span>.<span class="ruby-identifier">chomp</span>
+
+<span class="ruby-comment"># This line has a bug, fix it ... might be fixed now</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">choice</span> <span class="ruby-operator">==</span> (<span class="ruby-value">0</span><span class="ruby-operator">..</span><span class="ruby-value">50</span>) 
+    <span class="ruby-identifier">how_much</span> = <span class="ruby-identifier">choice</span>.<span class="ruby-identifier">to_i</span>
+  <span class="ruby-keyword">elsif</span> <span class="ruby-identifier">choice</span> <span class="ruby-operator">==</span> <span class="ruby-string">&quot;all&quot;</span>
+    <span class="ruby-identifier">dead</span>(<span class="ruby-string">&quot;You greedy son of a gun!&quot;</span>)
+  <span class="ruby-keyword">elsif</span> <span class="ruby-identifier">choice</span> <span class="ruby-operator">==</span> <span class="ruby-string">&quot;some&quot;</span>
+    <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;Nice, take the dough, you win!&quot;</span>
+    <span class="ruby-identifier">exit</span>(<span class="ruby-value">0</span>)
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-identifier">dead</span>(<span class="ruby-string">&quot;Man, learn to type a number.&quot;</span>)
+  <span class="ruby-keyword">end</span>
+
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">how_much</span> <span class="ruby-operator">&lt;</span> <span class="ruby-value">50</span>
+    <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;Nice, you&#39;re not greedy, you win!&quot;</span>
+    <span class="ruby-identifier">exit</span>(<span class="ruby-value">0</span>)
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-identifier">dead</span>(<span class="ruby-string">&quot;You greedy bastard!&quot;</span>)
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-greet" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">greet</span><span
+            class="method-args">(name)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="greet-source">
+            <pre><span class="ruby-comment"># File greeter.rb, line 1</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">greet</span>(<span class="ruby-identifier">name</span>)
+  <span class="ruby-identifier">greetings</span> = [<span class="ruby-string">&quot;Hello&quot;</span>, <span class="ruby-string">&quot;Hi&quot;</span>, <span class="ruby-string">&quot;Ohai&quot;</span>, <span class="ruby-string">&quot;ZOMG&quot;</span>].<span class="ruby-identifier">shuffle</span>
+  <span class="ruby-node">&quot;#{greetings.first} #{name}!&quot;</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-greeter" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">greeter</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="greeter-source">
+            <pre><span class="ruby-comment"># File greeter.rb, line 6</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">greeter</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;Hello. What&#39;s your first name? &quot;</span>
+  <span class="ruby-identifier">print</span> <span class="ruby-string">&#39; Type your first name. &gt; &#39;</span>
+  <span class="ruby-identifier">first_name</span> = <span class="ruby-identifier">gets</span>.<span class="ruby-identifier">chomp</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;Do you have a middle name? If so, type it in. &quot;</span>
+  <span class="ruby-identifier">print</span> <span class="ruby-string">&#39; &gt; &#39;</span>
+  <span class="ruby-identifier">middle_name</span> = <span class="ruby-identifier">gets</span>.<span class="ruby-identifier">chomp</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;Finally, what is your last name? &quot;</span>
+  <span class="ruby-identifier">print</span> <span class="ruby-string">&#39; &gt; &#39;</span>
+  <span class="ruby-identifier">last_name</span> = <span class="ruby-identifier">gets</span>.<span class="ruby-identifier">chomp</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;Hello, &quot;</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">first_name</span> <span class="ruby-operator">+</span> <span class="ruby-string">&quot; &quot;</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">middle_name</span> <span class="ruby-operator">+</span> <span class="ruby-string">&quot; &quot;</span> <span class="ruby-operator">+</span><span class="ruby-identifier">last_name</span> <span class="ruby-operator">+</span> <span class="ruby-string">&quot;! Glad to meet you.&quot;</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-lines" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">lines</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="lines-source">
+            <pre><span class="ruby-comment"># File line_width.rb, line 11</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">lines</span>
+  <span class="ruby-identifier">line_width</span> = <span class="ruby-value">40</span>
+  <span class="ruby-identifier">str</span> = <span class="ruby-string">&#39;--&gt; text &lt;--&#39;</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-identifier">str</span>.<span class="ruby-identifier">ljust</span> <span class="ruby-identifier">line_width</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-identifier">str</span>.<span class="ruby-identifier">center</span> <span class="ruby-identifier">line_width</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-identifier">str</span>.<span class="ruby-identifier">rjust</span> <span class="ruby-identifier">line_width</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-identifier">str</span>.<span class="ruby-identifier">ljust</span>(<span class="ruby-identifier">line_width</span><span class="ruby-operator">/</span><span class="ruby-value">2</span>) <span class="ruby-operator">+</span> <span class="ruby-identifier">str</span>.<span class="ruby-identifier">rjust</span>(<span class="ruby-identifier">line_width</span><span class="ruby-operator">/</span><span class="ruby-value">2</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-little_pest" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">little_pest</span><span
+            class="method-args">(var)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="little_pest-source">
+            <pre><span class="ruby-comment"># File double.rb, line 8</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">little_pest</span> <span class="ruby-identifier">var</span>
+  <span class="ruby-identifier">var</span> = <span class="ruby-keyword">nil</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;Ha Ha! I ruined your variable.&quot;</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-looping" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">looping</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="looping-source">
+            <pre><span class="ruby-comment"># File branching.rb, line 44</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">looping</span>
+  <span class="ruby-comment"># echos text unless you enter bye</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;Type something or to quit: enter bye: &gt; &quot;</span>
+  <span class="ruby-identifier">command</span> = <span class="ruby-string">&#39;&#39;</span>
+  <span class="ruby-keyword">while</span> <span class="ruby-identifier">command</span> <span class="ruby-operator">!=</span> <span class="ruby-string">&#39;bye&#39;</span>
+    <span class="ruby-identifier">puts</span> <span class="ruby-identifier">command</span>
+    <span class="ruby-identifier">command</span> = <span class="ruby-identifier">gets</span>.<span class="ruby-identifier">chomp</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-string">&#39;Come again soon!&#39;</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-main" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">main</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="main-source">
+            <pre><span class="ruby-comment"># File compound_interest.rb, line 14</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">main</span>()
+        <span class="ruby-identifier">print</span> <span class="ruby-string">&quot;\nPresent Value: &quot;</span>
+        <span class="ruby-identifier">pv</span> = <span class="ruby-identifier">gets</span>.<span class="ruby-identifier">chomp</span>.<span class="ruby-identifier">to_f</span> <span class="ruby-comment"># present value</span>
+        <span class="ruby-identifier">print</span> <span class="ruby-string">&quot;\nInterest Rate: &quot;</span>
+        <span class="ruby-identifier">r</span> = <span class="ruby-identifier">gets</span>.<span class="ruby-identifier">chomp</span>.<span class="ruby-identifier">to_f</span> <span class="ruby-comment"># rate</span>
+        <span class="ruby-identifier">print</span> <span class="ruby-string">&quot;\nPeriods In Year: &quot;</span>
+        <span class="ruby-identifier">n</span> = <span class="ruby-identifier">gets</span>.<span class="ruby-identifier">chomp</span>.<span class="ruby-identifier">to_f</span> <span class="ruby-comment"># periods in year to grow</span>
+        <span class="ruby-identifier">print</span> <span class="ruby-string">&quot;\nYears To Grow: &quot;</span>
+        <span class="ruby-identifier">y</span> = <span class="ruby-identifier">gets</span>.<span class="ruby-identifier">chomp</span>.<span class="ruby-identifier">to_f</span> <span class="ruby-comment"># years</span>
+        <span class="ruby-identifier">print</span> <span class="ruby-string">&quot;\nTotal: &quot;</span>  <span class="ruby-operator">+</span> <span class="ruby-identifier">calc_interest</span>(<span class="ruby-identifier">pv</span>, <span class="ruby-identifier">r</span>, <span class="ruby-identifier">n</span>, <span class="ruby-identifier">y</span>).<span class="ruby-identifier">to_s</span>  <span class="ruby-operator">+</span> <span class="ruby-string">&quot;\n&quot;</span>
+        <span class="ruby-identifier">gets</span> <span class="ruby-comment"># pause the console</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-maybeDo" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">maybeDo</span><span
+            class="method-args">(someProc)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="maybeDo-source">
+            <pre><span class="ruby-comment"># File proc.rb, line 25</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">maybeDo</span> <span class="ruby-identifier">someProc</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">rand</span>(<span class="ruby-value">2</span>) <span class="ruby-operator">==</span> <span class="ruby-value">0</span>
+    <span class="ruby-identifier">someProc</span>.<span class="ruby-identifier">call</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-month_schedule" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">month_schedule</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="month_schedule-source">
+            <pre><span class="ruby-comment"># File schedule.rb, line 31</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">month_schedule</span>
+  <span class="ruby-identifier">schedule</span> = {}
+  <span class="ruby-identifier">schedule</span>[<span class="ruby-value">:month_schedule</span>] = <span class="ruby-string">&quot;Program. Garden. Love Kyle.&quot;</span>
+  <span class="ruby-identifier">schedule</span>[<span class="ruby-value">:fun_month_schedule</span>] = <span class="ruby-string">&quot;Make money. Spend money.&quot;</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;Monthly Schedule: &quot;</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-identifier">schedule</span>[<span class="ruby-value">:month_schedule</span>]
+  <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;Fun Monthly Schedule: &quot;</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-identifier">schedule</span>[<span class="ruby-value">:fun_month_schedule</span>]
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-more_people" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">more_people</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <h1 id="method-i-more_people-label-begin">begin<span><a href="#method-i-more_people-label-begin">&para;</a> <a href="#top">&uarr;</a></span></h1>
+
+<p>Using a variable that calls a hashed symbol in an array then looping
+through the array that outputs as a list with the phone number at the end</p>
+
+<h1 id="method-i-more_people-label-end">end<span><a href="#method-i-more_people-label-end">&para;</a> <a href="#top">&uarr;</a></span></h1>
+          
+          
+
+          
+          <div class="method-source-code" id="more_people-source">
+            <pre><span class="ruby-comment"># File morepeople.rb, line 7</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">more_people</span>
+
+  <span class="ruby-identifier">phone</span> = { <span class="ruby-value">:phone</span> <span class="ruby-operator">=&gt;</span> <span class="ruby-string">&quot;555-555-5555&quot;</span> }
+  <span class="ruby-identifier">phone2</span> = { <span class="ruby-value">:phone2</span> <span class="ruby-operator">=&gt;</span> <span class="ruby-string">&quot;760-555-5555&quot;</span> }
+
+  <span class="ruby-identifier">more_people</span> = [ <span class="ruby-string">&quot;john&quot;</span>, <span class="ruby-string">&quot;fred&quot;</span>, <span class="ruby-string">&quot;sam&quot;</span>, <span class="ruby-identifier">phone</span> ] <span class="ruby-operator">+</span> [ <span class="ruby-string">&quot;charles&quot;</span>, <span class="ruby-string">&quot;lori&quot;</span>, <span class="ruby-identifier">phone2</span> ]
+
+  <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;Here are some names listed by phone number : &quot;</span>
+
+  <span class="ruby-identifier">more_people</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">p</span><span class="ruby-operator">|</span>
+    <span class="ruby-identifier">puts</span> <span class="ruby-identifier">p</span>.<span class="ruby-identifier">to_s</span>
+  <span class="ruby-keyword">end</span>
+
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-multiply" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">multiply</span><span
+            class="method-args">(a, b)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="multiply-source">
+            <pre><span class="ruby-comment"># File ex21.rb, line 11</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">multiply</span>(<span class="ruby-identifier">a</span>, <span class="ruby-identifier">b</span>)
+  <span class="ruby-identifier">puts</span> <span class="ruby-node">&quot;Multipying #{a} * #{b}&quot;</span>
+  <span class="ruby-keyword">return</span> <span class="ruby-identifier">a</span> <span class="ruby-operator">*</span> <span class="ruby-identifier">b</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-print_none" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">print_none</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="print_none-source">
+            <pre><span class="ruby-comment"># File ex18.rb, line 17</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">print_none</span>()
+  <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;I got nothing.&quot;</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-print_one" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">print_one</span><span
+            class="method-args">(arg1)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>This just takes one arguement</p>
+          
+          
+
+          
+          <div class="method-source-code" id="print_one-source">
+            <pre><span class="ruby-comment"># File ex18.rb, line 13</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">print_one</span>(<span class="ruby-identifier">arg1</span>)
+  <span class="ruby-identifier">puts</span> <span class="ruby-node">&quot;arg1: #{arg1}&quot;</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-print_two" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">print_two</span><span
+            class="method-args">(*args)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>This one is like your scripts with ARGV</p>
+          
+          
+
+          
+          <div class="method-source-code" id="print_two-source">
+            <pre><span class="ruby-comment"># File ex18.rb, line 2</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">print_two</span>(<span class="ruby-operator">*</span><span class="ruby-identifier">args</span>)
+  <span class="ruby-identifier">arg1</span>, <span class="ruby-identifier">arg2</span> = <span class="ruby-identifier">args</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-node">&quot;arg1: #{arg1}, arg2: #{arg2}&quot;</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-print_two_again" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">print_two_again</span><span
+            class="method-args">(arg1, arg2)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>OK, that *args is actually pointless, we can just do this</p>
+          
+          
+
+          
+          <div class="method-source-code" id="print_two_again-source">
+            <pre><span class="ruby-comment"># File ex18.rb, line 8</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">print_two_again</span>(<span class="ruby-identifier">arg1</span>, <span class="ruby-identifier">arg2</span>)
+  <span class="ruby-identifier">puts</span> <span class="ruby-node">&quot;arg1: #{arg1}, arg2: #{arg2}&quot;</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-proc_from" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">proc_from</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Public <a href="Class.html">Class</a> Method</p>
+          
+          
+
+          
+          <div class="method-source-code" id="proc_from-source">
+            <pre><span class="ruby-comment"># File proc_greeting.rb, line 3</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">proc_from</span>
+  <span class="ruby-constant">Proc</span>.<span class="ruby-identifier">new</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-profile" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">profile</span><span
+            class="method-args">(descriptionOfBlock, &amp;block)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="profile-source">
+            <pre><span class="ruby-comment"># File proc.rb, line 125</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">profile</span> <span class="ruby-identifier">descriptionOfBlock</span>, <span class="ruby-operator">&amp;</span><span class="ruby-identifier">block</span>
+  <span class="ruby-identifier">startTime</span> = <span class="ruby-constant">Time</span>.<span class="ruby-identifier">now</span>
+
+  <span class="ruby-identifier">block</span>.<span class="ruby-identifier">call</span>
+
+  <span class="ruby-identifier">duration</span> = <span class="ruby-constant">Time</span>.<span class="ruby-identifier">now</span> <span class="ruby-operator">-</span> <span class="ruby-identifier">startTime</span>
+
+  <span class="ruby-identifier">puts</span> <span class="ruby-identifier">descriptionOfBlock</span><span class="ruby-operator">+</span><span class="ruby-string">&#39;:  &#39;</span><span class="ruby-operator">+</span><span class="ruby-identifier">duration</span>.<span class="ruby-identifier">to_s</span><span class="ruby-operator">+</span><span class="ruby-string">&#39; seconds&#39;</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-raise_and_rescue" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">raise_and_rescue</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="raise_and_rescue-source">
+            <pre><span class="ruby-comment"># File exception.rb, line 7</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">raise_and_rescue</span>
+  <span class="ruby-keyword">begin</span>
+    <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;I am before the raise.&quot;</span>
+    <span class="ruby-identifier">raise</span> <span class="ruby-string">&quot;An error has occured.&quot;</span>
+    <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;I am after the raise.&quot;</span>
+  <span class="ruby-keyword">rescue</span>
+    <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;I am rescued.&quot;</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;I am after the begin block.&quot;</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-raise_exception" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">raise_exception</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="raise_exception-source">
+            <pre><span class="ruby-comment"># File exception.rb, line 1</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">raise_exception</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;I am before the raise.&quot;</span>
+  <span class="ruby-identifier">raise</span> <span class="ruby-string">&quot;An error has occured.&quot;</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;I am after the raise.&quot;</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-short_greeter" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">short_greeter</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="short_greeter-source">
+            <pre><span class="ruby-comment"># File greeter.rb, line 19</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">short_greeter</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;Type in your full name. &quot;</span>
+  <span class="ruby-identifier">print</span> <span class="ruby-string">&#39; &gt; &#39;</span>
+  <span class="ruby-identifier">name</span> = <span class="ruby-identifier">gets</span>.<span class="ruby-identifier">chomp</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;Hello, &quot;</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">name</span> <span class="ruby-operator">+</span> <span class="ruby-string">&quot;. You are becoming a programmer, I see. Good for you.&quot;</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-simple_interest" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">simple_interest</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="simple_interest-source">
+            <pre><span class="ruby-comment"># File math_exercise.rb, line 7</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">simple_interest</span>
+
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-start" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">start</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="start-source">
+            <pre><span class="ruby-comment"># File ex35.rb, line 80</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">start</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;You are in a dark room.&quot;</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;There is a door to your right and left.&quot;</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;Which one do you take?&quot;</span>
+
+  <span class="ruby-identifier">print</span> <span class="ruby-string">&quot;&gt; &quot;</span>
+  <span class="ruby-identifier">choice</span> = <span class="ruby-identifier">$stdin</span>.<span class="ruby-identifier">gets</span>.<span class="ruby-identifier">chomp</span>
+
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">choice</span> <span class="ruby-operator">==</span> <span class="ruby-string">&quot;left&quot;</span>
+    <span class="ruby-identifier">bear_room</span>
+  <span class="ruby-keyword">elsif</span> <span class="ruby-identifier">choice</span> <span class="ruby-operator">==</span> <span class="ruby-string">&quot;right&quot;</span>
+    <span class="ruby-identifier">cthulhu_room</span>
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-identifier">dead</span>(<span class="ruby-string">&quot;You stumble around the room until you starve.&quot;</span>)
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-subtract" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">subtract</span><span
+            class="method-args">(a, b)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="subtract-source">
+            <pre><span class="ruby-comment"># File ex21.rb, line 6</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">subtract</span>(<span class="ruby-identifier">a</span>, <span class="ruby-identifier">b</span>)
+  <span class="ruby-identifier">puts</span> <span class="ruby-node">&quot;Subtracting #{a} - #{b}&quot;</span>
+  <span class="ruby-keyword">return</span> <span class="ruby-identifier">a</span> <span class="ruby-operator">-</span> <span class="ruby-identifier">b</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-teacher" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">teacher</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="teacher-source">
+            <pre><span class="ruby-comment"># File branching.rb, line 24</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">teacher</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-string">&#39;Hello, and welcome to the class.&#39;</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-string">&#39;My name is Virtual Teacher. And your name is ....?&#39;</span>
+  <span class="ruby-identifier">name</span> = <span class="ruby-identifier">gets</span>.<span class="ruby-identifier">chomp</span>
+
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">name</span> <span class="ruby-operator">==</span> <span class="ruby-identifier">name</span>.<span class="ruby-identifier">capitalize</span>
+    <span class="ruby-identifier">puts</span> <span class="ruby-string">&#39;Please take a seat, &#39;</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">name</span> <span class="ruby-operator">+</span> <span class="ruby-string">&#39;.&#39;</span>
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-identifier">puts</span> <span class="ruby-identifier">name</span> <span class="ruby-operator">+</span> <span class="ruby-string">&#39;? You mean &#39;</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">name</span>.<span class="ruby-identifier">capitalize</span> <span class="ruby-operator">+</span> <span class="ruby-string">&#39;, right?&#39;</span>
+    <span class="ruby-identifier">puts</span> <span class="ruby-string">&#39;Don\&#39;t you even know how to spell your name?&#39;</span>
+    <span class="ruby-identifier">reply</span> = <span class="ruby-identifier">gets</span>.<span class="ruby-identifier">chomp</span>
+
+    <span class="ruby-keyword">if</span> <span class="ruby-identifier">reply</span>.<span class="ruby-identifier">downcase</span> <span class="ruby-operator">==</span> <span class="ruby-string">&#39;yes&#39;</span>
+      <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;Hmmph!  Well, sit down.&quot;</span>
+    <span class="ruby-keyword">else</span>
+      <span class="ruby-identifier">puts</span> <span class="ruby-string">&#39;Get out!&#39;</span>
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-twiceDo" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">twiceDo</span><span
+            class="method-args">(someProc)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="twiceDo-source">
+            <pre><span class="ruby-comment"># File proc.rb, line 31</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">twiceDo</span> <span class="ruby-identifier">someProc</span>
+  <span class="ruby-identifier">someProc</span>.<span class="ruby-identifier">call</span>
+  <span class="ruby-identifier">someProc</span>.<span class="ruby-identifier">call</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-week_schedule" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">week_schedule</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="week_schedule-source">
+            <pre><span class="ruby-comment"># File schedule.rb, line 19</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">week_schedule</span>
+  <span class="ruby-identifier">schedule</span> = {}
+  <span class="ruby-identifier">schedule</span>[<span class="ruby-value">:work_week</span>] = <span class="ruby-string">&quot;Take kids to school. Work. Pick up kids.&quot;</span>
+  <span class="ruby-identifier">schedule</span>[<span class="ruby-value">:week_end</span>] = <span class="ruby-string">&quot;Pack up car. Go camping. Have fun.&quot;</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;Weeks Schedule: &quot;</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-identifier">schedule</span>[<span class="ruby-value">:work_week</span>]
+  <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;Weekend Schedule: &quot;</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-identifier">schedule</span>[<span class="ruby-value">:week_end</span>]
+  <span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-while_loop" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">while_loop</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="while_loop-source">
+            <pre><span class="ruby-comment"># File ex33.rb, line 2</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">while_loop</span>
+  
+  <span class="ruby-identifier">i</span> = <span class="ruby-value">0</span>
+  <span class="ruby-identifier">numbers</span> = []
+
+    <span class="ruby-keyword">while</span> <span class="ruby-identifier">i</span> <span class="ruby-operator">&lt;</span> <span class="ruby-value">6</span>
+      <span class="ruby-identifier">puts</span> <span class="ruby-node">&quot;At the top i is #{i}&quot;</span> 
+      <span class="ruby-identifier">numbers</span>.<span class="ruby-identifier">push</span>(<span class="ruby-identifier">i</span>)
+
+      <span class="ruby-identifier">i</span> <span class="ruby-operator">+=</span> <span class="ruby-value">1</span>
+      <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;Numbers now: &quot;</span>, <span class="ruby-identifier">numbers</span>
+      <span class="ruby-identifier">puts</span> <span class="ruby-node">&quot;At the bottom i is #{i}&quot;</span>
+      
+<span class="ruby-comment"># then use the range operator to do 0 to 5 counts while removing the 6</span>
+
+      (<span class="ruby-value">0</span><span class="ruby-operator">...</span><span class="ruby-value">6</span>).<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">i</span><span class="ruby-operator">|</span>
+        <span class="ruby-identifier">puts</span> <span class="ruby-node">&quot;adding #{i} to the list&quot;</span>
+        
+<span class="ruby-comment"># pushes the i variable on the *end* of the list</span>
+
+        <span class="ruby-identifier">numbers</span>.<span class="ruby-identifier">push</span>(<span class="ruby-identifier">i</span>)
+      <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">end</span>
+
+    <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;The numbers: &quot;</span>
+
+    <span class="ruby-identifier">numbers</span>.<span class="ruby-identifier">each</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">num</span><span class="ruby-operator">|</span> <span class="ruby-identifier">puts</span> <span class="ruby-identifier">num</span> }
+
+    <span class="ruby-identifier">bigger_number</span> = []
+
+    (<span class="ruby-value">0</span><span class="ruby-operator">..</span><span class="ruby-value">10</span>).<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">i</span><span class="ruby-operator">|</span>
+      <span class="ruby-identifier">puts</span> <span class="ruby-node">&quot;adding #{i} to the list&quot;</span>
+      <span class="ruby-identifier">bigger_number</span>.<span class="ruby-identifier">push</span>(<span class="ruby-identifier">i</span>)
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+    </section>
+  
+  </section>
+</main>
+
+
+<footer id="validator-badges" role="contentinfo">
+  <p><a href="https://validator.w3.org/check/referer">Validate</a>
+  <p>Generated by <a href="https://ruby.github.io/rdoc/">RDoc</a> 6.0.0.
+  <p>Based on <a href="http://deveiate.org/projects/Darkfish-RDoc/">Darkfish</a> by <a href="http://deveiate.org">Michael Granger</a>.
+</footer>
+

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>class CentralCorridor - RDoc Documentation</title>
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+  var index_rel_prefix = "./";
+</script>
+
+<script src="./js/jquery.js"></script>
+<script src="./js/darkfish.js"></script>
+
+<link href="./css/fonts.css" rel="stylesheet">
+<link href="./css/rdoc.css" rel="stylesheet">
+
+
+
+<body id="top" role="document" class="class">
+<nav role="navigation">
+  <div id="project-navigation">
+    <div id="home-section" role="region" title="Quick navigation" class="nav-section">
+  <h2>
+    <a href="./index.html" rel="home">Home</a>
+  </h2>
+
+  <div id="table-of-contents-navigation">
+    <a href="./table_of_contents.html#pages">Pages</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </div>
+</div>
+
+    <div id="search-section" role="search" class="project-section initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <div id="search-field-wrapper">
+      <input id="search-field" role="combobox" aria-label="Search"
+             aria-autocomplete="list" aria-controls="search-results"
+             type="text" name="search" placeholder="Search" spellcheck="false"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </div>
+
+    <ul id="search-results" aria-label="Search Results"
+        aria-busy="false" aria-expanded="false"
+        aria-atomic="false" class="initially-hidden"></ul>
+  </form>
+</div>
+
+  </div>
+
+  
+
+  <div id="class-metadata">
+    
+    <div id="parent-class-section" class="nav-section">
+  <h3>Parent</h3>
+
+  
+  <p class="link"><a href="Scene.html">Scene</a>
+  
+</div>
+
+    
+    
+    <!-- Method Quickref -->
+<div id="method-list-section" class="nav-section">
+  <h3>Methods</h3>
+
+  <ul class="link-list" role="directory">
+    
+    <li ><a href="#method-i-enter">#enter</a>
+    
+  </ul>
+</div>
+
+  </div>
+</nav>
+
+<main role="main" aria-labelledby="class-CentralCorridor">
+  <h1 id="class-CentralCorridor" class="class">
+    class CentralCorridor
+  </h1>
+
+  <section class="description">
+    
+  </section>
+
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+
+    
+
+    
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section">
+       <header>
+         <h3>Public Instance Methods</h3>
+       </header>
+
+    
+      <div id="method-i-enter" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">enter</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="enter-source">
+            <pre><span class="ruby-comment"># File ex43.rb, line 52</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">enter</span>()
+  <span class="ruby-identifier">puts</span> <span class="ruby-string">%q{
+      The Gothons of Planet Percal have invaded your ship and destroyed
+    your entire crew. You are the last surviving member and your last
+    mission is to get the neutron destruct bomb from the Weapons Armory,
+    put it in the bridge and blow up the ship after getting into an escape
+    pod.
+      You&#39;re running down the central corridor to the Weapons Armory when
+    a Gothon jumps out, red scaly skin, dark grimy teeth, and
+    wearing an evil clown costume. He&#39;s blocking the door to the
+    Armory and is about to pull a weapon out to blast you. What do you do?
+    }</span>
+    <span class="ruby-identifier">print</span> <span class="ruby-string">&quot;&gt; &quot;</span>
+
+    <span class="ruby-identifier">action</span> = <span class="ruby-identifier">$stdin</span>.<span class="ruby-identifier">gets</span>.<span class="ruby-identifier">chomp</span>
+
+    <span class="ruby-keyword">if</span> <span class="ruby-identifier">action</span> <span class="ruby-operator">==</span> <span class="ruby-string">&quot;shoot&quot;</span>
+      <span class="ruby-identifier">puts</span> <span class="ruby-string">%q{
+        Quick on the draw, you yank out your blaster and fire it at the Gothon.
+      His clown costume is flowing and moving around his body, which throws off
+      your aim. Your laser hits his costume but misses him entirely. This
+      completely ruins his brand new costume his mother bought him. He flies into
+      a rage and blasts you repeatedly in the face. Then he eats you.
+      }</span>
+      <span class="ruby-keyword">return</span> <span class="ruby-string">&#39;death&#39;</span>
+
+    <span class="ruby-keyword">elsif</span> <span class="ruby-identifier">action</span> <span class="ruby-operator">==</span> <span class="ruby-string">&quot;dodge&quot;</span>
+      <span class="ruby-identifier">puts</span> <span class="ruby-string">%q{
+        Like a world class boxer you dodge, weave and slip and slide left and
+      right. In the middle of your dodge, your foot slips and you bang your
+      head on the metal wall and pass out. You wake up shortly after only to
+      die as the Gothon stomps on your head. Then he eats you.
+      }</span>
+      <span class="ruby-keyword">return</span> <span class="ruby-string">&#39;death&#39;</span>
+
+    <span class="ruby-keyword">elsif</span> <span class="ruby-identifier">action</span> <span class="ruby-operator">==</span> <span class="ruby-string">&quot;tell a joke&quot;</span>
+      <span class="ruby-identifier">puts</span> <span class="ruby-string">%q{
+        Lucky for you they made you learn Gothon insults in the academy.
+      You tell the one Gothon joke you know: Llaksdj kljs aslkd asl skj,
+      lsak aslk las jfaf ksd.
+        The Gothon stops, tries not to laugh but busts out laughing and can
+      not move. While he&#39;s laughing, you run up and shoot him in the head.
+      You jump through the Weapon Armory door.
+      }</span>
+      <span class="ruby-keyword">return</span> <span class="ruby-string">&#39;laser_weapon_armory&#39;</span>
+
+    <span class="ruby-keyword">else</span>
+      <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;Does not compute! Try shoot, dodge or tell a joke.&quot;</span>
+      <span class="ruby-keyword">return</span> <span class="ruby-string">&#39;central_corridor&#39;</span>
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+    </section>
+  
+  </section>
+</main>
+
+
+<footer id="validator-badges" role="contentinfo">
+  <p><a href="https://validator.w3.org/check/referer">Validate</a>
+  <p>Generated by <a href="https://ruby.github.io/rdoc/">RDoc</a> 6.0.0.
+  <p>Based on <a href="http://deveiate.org/projects/Darkfish-RDoc/">Darkfish</a> by <a href="http://deveiate.org">Michael Granger</a>.
+</footer>
+
