@@ -29,6 +29,7 @@ puts "********"
 begin
   raise 1234.0
 rescue => error
+  puts "This is a TypeError."
   puts error.inspect
 end
 
@@ -36,7 +37,25 @@ end
 begin
   raise Exception.new
 rescue Exception => error
-  puts "Correct!"
+  puts "Correct! This is a StandardError."
+end
+
+# Open and read a text file
+# In the code below, since a block is given, file will be closed automatically.
+begin
+  File.open('file1', 'r') do |f1|
+    while line = f1.gets
+      puts line
+    end
+  end
+
+# Create new file and write to it.
+  File.open('file3', 'w') do |f3|
+    f3.puts "Created by Matt! From the code in exception.rb"
+  end
+rescue Exception => msg
+  # Display the system generated error message.
+  puts msg
 end
 
 class Name
