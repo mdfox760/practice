@@ -13,4 +13,4 @@ class Die
   end
 end
 
-puts Die.new.showing
+puts Die.new.showing*2
