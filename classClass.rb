@@ -7,6 +7,9 @@ class Class
 end
 
 class Name
+  def my_name
+    puts "Matt Fox"
+  end
 end
 
 n = Name.new
