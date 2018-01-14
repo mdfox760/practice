@@ -1,3 +1,4 @@
+# This could be a huge file. It's better to run ri.
 module Mod
   include Math
   CONST = 1
@@ -27,3 +28,9 @@ a = "My string."
 puts a.extend(fred)
 puts a.meth1
 puts a.meth2
+
+module Admin
+  autoload :User, 'admin/user'
+end
+puts "Evaluates if :User in Admin module is defined:"
+puts Admin.const_defined?(:User)
