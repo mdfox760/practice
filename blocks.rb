@@ -44,6 +44,12 @@ number do
   2
 end
 
+puts "*****"
+# Doesn't return anything. 
+def each_item(&block)
+  @items.each(&block)
+end
+
 # Iterators
 # Yield can be called as many times as you want.
 # This is a method similiar to the map method.
