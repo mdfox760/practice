@@ -36,7 +36,7 @@ def teacher
     if reply.downcase == 'yes'
       puts "Hmmph!  Well, sit down."
     else
-      puts 'Get out!'
+      puts 'You have a lot to learn, padawan!'
     end
   end
 end
@@ -51,8 +51,6 @@ def looping
   end
   puts 'Come again soon!'
 end
-
-
 
  branching
 # fortune_teller

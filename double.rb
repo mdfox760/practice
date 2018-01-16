@@ -3,7 +3,7 @@ def doubleThis num
   puts num.to_s + ' doubled is ' + numTimes2.to_s
 end
 
-doubleThis 44
+doubleThis 11
 
 def little_pest var
   var = nil

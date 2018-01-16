@@ -1,7 +1,7 @@
 class Me
   def initialize
     @name = "Matt Fox"
-    @home_address = "Temecula"
+    @home_address = "Oceanside"
     @work_address = "Oceanside"
     @email = "me@email.com"
     @phone = "000-000-0000"

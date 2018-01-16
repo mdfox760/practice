@@ -10,7 +10,8 @@ class Die
 
   def showing
     @number_showing
+
   end
 end
 
-puts Die.new.showing*2
+puts Die.new.showing
