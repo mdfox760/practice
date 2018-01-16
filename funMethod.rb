@@ -1,4 +1,4 @@
-# A program that needs a method to clean up all the repitition. 
+# A program that needs a method to clean up all the repitition.
 
 puts 'Hello and thank you for taking the time to
   help me with this experiment. It has to do with the way people
@@ -13,7 +13,7 @@ while (not goodAnswer)
   if (answer == 'yes' or answer == 'no')
     goodAnswer = true
   else
-    puts 'Please anser "yes" or "no."'
+    puts 'Please answer "yes" or "no."'
   end
 end
 

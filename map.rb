@@ -1,4 +1,5 @@
-# map is like a loop with each, except it is mutable(it will change an array and keep it)
+# map is like a loop with each, except it is mutable
+# (it will change an array and keep it)
 
 x = [ "a" "b" "c" ]
 y = [ "n" "o" "p" "e"]

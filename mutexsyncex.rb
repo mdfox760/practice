@@ -22,7 +22,8 @@ class BankAccount
     }
   end
 end
-nb = BankAccount.new("Matt Fox", 100, 200)
+nb = BankAccount.new("Matt", 1000, 5000)
 puts nb.report
-nb.transfer_from_savings(50)
+nb.transfer_from_savings(500)
+puts "Transfer complete: New balances"
 puts nb.report

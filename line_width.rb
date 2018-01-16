@@ -9,7 +9,7 @@ puts( 'And scared her poor shoe dog away.'.center(line_width))
 puts ''
 
 def lines
-  line_width = 40
+  line_width = 79
   str = '--> text <--'
   puts str.ljust line_width
   puts str.center line_width
