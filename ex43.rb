@@ -140,7 +140,7 @@ class  LaserWeaponArmory < Scene
       }
       return 'death'
     end
-  end
+  end 
 end
 
 class TheBridge < Scene
@@ -242,7 +242,7 @@ class Finished < Scene
   def enter()
     puts "You won! Good job."
   end
-  
+
 end
 
 

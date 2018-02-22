@@ -106,7 +106,6 @@ class Halibut < Fish
   end
 end
 
-
 ## rover is-a Dog
 rover = Dog.new("Rover")
 
@@ -118,12 +117,6 @@ mary = Person.new("Mary")
 
 ## mary has-a pet named satan
 mary.pet = "Satan"
-
-## frank is a new employee and has a salary of 120000
-frank = Employee.new("Frank", 120,000)
-
-## frank has-a pet named rover
-frank.pet = "Rover"
 
 ## flipper is-a Fish and has-a name of flipper
 flipper = Fish.new("Flipper")
