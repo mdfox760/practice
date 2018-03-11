@@ -1,6 +1,6 @@
 
 require 'money'
-Money.use_i18n = false
+Money.use_i18n = false # You must include this or it'll throw an error
 
 # A gem test
 puts "Gem test:"
