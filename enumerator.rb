@@ -1,3 +1,4 @@
+# Enumerators must be put in a block to be displayed.
 enumerator = %w(one two three).each
 puts enumerator.class # => Enumerator
 
