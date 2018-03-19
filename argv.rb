@@ -9,9 +9,9 @@ puts "Your first variable is: #{first}"
 puts "Your second variable is: #{second}"
 puts "Your third variable is: #{third}"
 
-# Added exercise 12. If you add the arguements
+# Added exercise 12. If you add the arguments
 # for the first part of the program, the second
-# part fails. If you skip the arguements, the second
+# part fails. If you skip the arguments, the second
 # part runs fine.
 
 print "Give me a number: "

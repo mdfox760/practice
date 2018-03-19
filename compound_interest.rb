@@ -5,7 +5,7 @@
 
 # FV = PV * ( 1 + r/p) ^ n * p
 
-def  calc_interest(pv, r, n, y)
+def calc_interest(pv, r, n, y)
 	r = r / 100                             # Convert To Decimal
 	fv = pv * (1 + (r / n))**(y * n)
 	return fv                               # Future Value
