@@ -8,17 +8,23 @@ num.each do |i|
 end
 
 bigger_num.each do |i|
-  sum =+ i
+  sum += i
 end
 
 num.inject(0, :+)
 puts "Average of num array:"
+# Returns whole number
 puts num.sum/num.size
+# Returns float
 puts num.sum/num.size.to_f
-
+# Limits precision to 3 digits
+puts sprintf("%0.3f", num.sum/num.size.to_f)
 puts "****"*5
 
 puts "Average of bigger_num array:"
 bigger_num.inject(0, :+)
 puts bigger_num.sum/num.size
+# Returns float
 puts bigger_num.sum/num.size.to_f
+# Limits precision to 4 digits
+puts sprintf("%0.4f", bigger_num.sum/num.size.to_f)
