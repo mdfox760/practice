@@ -3,11 +3,13 @@ text = "A regular expression is a sequence of characters that define a search pa
 # String literals
 # Searches for and finds the word 'character'. Returns #<MatchData "character">
 matches = text.match(/character/)
-p matches
+p matches # Returns character
+puts matches
 
 # Searches for and does not find the word 'sentence'. Returns 'nil'
 matches = text.match(/sentence/)
 p matches
+puts matches
 
 # Anchors(boundries)
 # Most commonly used anchors are: Beginning or end of the string, beginning
@@ -42,7 +44,7 @@ followed by a character that is either “a”, “e”, “i”, “o”, or �
 and potentially (*) followed by any character between “a” and “z”, and
 finally ends with a word boundary. Also, case sensitive.
 =end
-
+puts "text.scan:"
 p text.scan(/\b[AEIOUaeiou][a-z]*\b/)
 
 # Quantifiers
