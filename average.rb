@@ -12,6 +12,7 @@ bigger_num.each do |i|
 end
 
 num.inject(0, :+)
+puts "num array: #{num}"
 puts "Average of num array:"
 # Returns whole number
 puts num.sum/num.size
@@ -21,6 +22,7 @@ puts num.sum/num.size.to_f
 puts sprintf("%0.3f", num.sum/num.size.to_f)
 puts "****"*5
 
+puts "bigger_num array: #{bigger_num}"
 puts "Average of bigger_num array:"
 bigger_num.inject(0, :+)
 puts bigger_num.sum/num.size
