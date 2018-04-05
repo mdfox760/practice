@@ -5,31 +5,34 @@ class House
   attr_accessor :baths
   attr_accessor :price
 
-  def initialize( where, area, beds, baths, price )
+  def initialize( where, price, area, beds, baths )
     @address = where
+    @price = price
     @square_feet = area
     @bedrooms = beds
     @baths = baths
-    @price = price
   end
 
   def display
     puts "The address is #{@address}"
+    puts "The asking price is $#{@price}."
     puts "It has #{@square_feet} square feet."
     puts "It has #{@bedrooms} bedrooms."
     puts "It has #{@baths} bathrooms."
-    puts "The asking price is $#{@price}."
   end
 
 end
 
-small_house = House.new("234 Main st.", "800", "2", "2", "200,000")
-large_house = House.new("123 Elm st.", "2500", "4", "3", "350,000")
+small_house = House.new("234 Main st.", 200000, 800, "2", "2")
+large_house = House.new("123 Elm st.", 350000, 2500, "4", "3")
 puts "---" * 10
+puts "Small house:"
 puts small_house.display
-puts small_house.price
-puts small_house.price.to_f/small_house.square_feet.to_f
+puts "$#{small_house.price}"
+puts "Price per sq. ft.:"
+puts "$#{small_house.price/small_house.square_feet}"
 puts "---" * 10
+puts "Large house:"
 puts large_house.display
-puts large_house.bedrooms
-puts large_house.price.to_f/large_house.square_feet.to_f
+puts "Price per sq. ft.:"
+puts "$#{large_house.price/large_house.square_feet}"
