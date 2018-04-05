@@ -6,6 +6,6 @@ def median(array)
   (sorted[(len - 1) / 2] + sorted[len / 2]) / 2.0
 end
 
-puts median([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
 puts median([1, 2, 3])
-puts median([125000, 225000, 300000, 500000])
+puts median([1, 20, 3, 4, 80, 9, 10])
+puts median([25000, 75000, 125000, 180000, 225000, 320000, 10000000, 2000000, 500000, 375000])
