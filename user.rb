@@ -1,13 +1,23 @@
 class User
-  attr_accessor :full_name, :email
+  attr_accessor :first_name, :last_name, :full_name, :email
 
   def initialize
+    @first_name
+    @last_name
     @full_name = full_name
     @email = email
   end
 
   def email
     @email
+  end
+
+  def first_name
+    @first_name
+  end
+
+  def last_name
+    @last_name
   end
 
   def full_name
@@ -28,10 +38,12 @@ user = User.new
 user = {}
 user[:full_name] = "Matt Fox"
 user[:email] = "matt@email.com"
+user[:first_name] = "Matt"
+user[:last_name] = "Fox"
 user2 = User.new
 user2 = {}
-user2[:full_name] = "Lydia Villez"
-user2[:email] = "lydz@email.com"
+user2[:full_name] = "Lydia Banana"
+user2[:email] = "lydia@email.com"
 
 puts user.each {|key, value| puts "User Info: \n#{value}"}
 puts user2
