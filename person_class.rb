@@ -24,11 +24,12 @@ class Person
     # Digest::SHA2.hexdigest(@password)
     encrypt(@password)
   end
+
 end
 
 person = Person.new("Ada")
 person.password = "super secret"
+# The code below shows the encrypted password, but not the plain text.
+puts person.encrypted_password
 # Keeps the private method private by giving NoMethodError
 puts person.encrypt("super secret")
-# The code below shows the encrypted password, but not the plain text.
-# puts person.encrypted_password
