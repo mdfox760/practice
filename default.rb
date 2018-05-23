@@ -1,4 +1,5 @@
-# Initialize with default values
+# Initialize with default values.
+# See default_class.rb for variation.
 
 class Car
   attr_accessor :color, :doors
