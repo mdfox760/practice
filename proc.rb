@@ -151,7 +151,7 @@ profile 'count to a million' do
   end
 end
 
-a_proc = Proc.new { |scalar, *values| values.map {|value| value*scaler } }
+a_proc = Proc.new { |scalar, *values| values.map {|value| value*scalar } }
 p a_proc.call(9, 1, 2, 3)
 
 def fred(param)

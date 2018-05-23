@@ -45,7 +45,7 @@ number do
 end
 
 puts "*****"
-# Doesn't return anything. 
+# Doesn't return anything.
 def each_item(&block)
   @items.each(&block)
 end
@@ -64,6 +64,13 @@ def my_map(array)
     new_array
   end
 
+# Returns 2, 4, 6
 my_map([1, 2, 3]) do |number|
   puts "#{number * 2}"
 end
+
+# Returns 2
+def demo_block(number)
+  yield(number)
+end
+puts demo_block(1) { |number| number + 1 }
