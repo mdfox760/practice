@@ -22,3 +22,10 @@ puts ha.last
 # to return first n elements of an array, use take.
 puts "First two elements in ha: "
 puts ha.take(2)
+puts "****"*8
+list = %w[21, the best age for gambling,]
+puts list
+puts list.push("drinking")
+# << appends the array
+puts list<<"and graduating"
+puts list

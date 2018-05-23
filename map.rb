@@ -1,5 +1,8 @@
 # map is like a loop with each, except it is mutable
 # (it will change an array and keep it)
+a = [1, 2, 3, 4, 5]
+puts a.map { |i| i + 1 }
+puts a # It didn't keep this one!
 
 x = [ "a" "b" "c" ]
 y = [ "n" "o" "p" "e"]

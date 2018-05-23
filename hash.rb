@@ -31,3 +31,8 @@ puts weird_hash
 weird_hash.each do |weird|
   puts weird
 end
+
+chuck_norris = Hash[:punch, 99, :kick, 98, :stops_bullets_with_hands, true]
+p chuck_norris
+p chuck_norris.keys
+p chuck_norris.values
