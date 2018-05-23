@@ -20,8 +20,9 @@ def main()
 	n = gets.chomp.to_f # periods in year to grow
 	print "\nYears To Grow: "
 	y = gets.chomp.to_f # years
-	print "\nTotal: "  + calc_interest(pv, r, n, y).to_s  + "\n"
-	gets # pause the console
+	print "\nTotal: "  + calc_interest(pv, r, n, y).round(2).to_s  + "\n"
+	gets # pause the console, hit enter to continue
+	
 end
 
 main()
