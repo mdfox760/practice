@@ -19,7 +19,6 @@ class Account
     @name = name
   end
 
-# Both deposit and withdraw methods don't work. Fix it.
   def deposit amount
     @balance += amount
   end
@@ -36,9 +35,13 @@ Account.find_for "Kyle"
 
 account = Account.find_for "Bob"
 account2 = Account.find_for "Kyle"
-account.balance = "50,000"
-account2.balance = "200"
-puts account.name
-puts account.balance
-puts account2.name
-puts account2.balance
+account.balance = 50000
+account2.balance = 200
+
+puts "#{account.name} Deposit: $" + account.deposit(200).to_s
+puts "#{account.name} Withdraw: $" + account.withdraw(50).to_s
+puts "#{account.name} Balance: $" + account.balance.to_s
+
+puts "#{account2.name} Deposit: $" + account2.deposit(200).to_s
+puts "#{account2.name} Withdraw: $" + account2.withdraw(50).to_s
+puts "#{account2.name} Balance: $" + account2.balance.to_s
