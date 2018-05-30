@@ -23,8 +23,8 @@ class House
 
 end
 
-small_house = House.new("234 Main st.", 200000, 800, "2", "2")
-large_house = House.new("123 Elm st.", 350000, 2500, "4", "3")
+small_house = House.new("234 Main st.", 325000, 1300, "2", "2")
+large_house = House.new("123 Elm st.", 600000, 2600, "4", "3")
 puts "---" * 10
 puts "Small house:"
 puts small_house.display

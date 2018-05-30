@@ -71,6 +71,6 @@ end
 
 product = Product.new()
 
-puts product.items
-puts product.vendors.sort
-puts product.prices
+puts product.item
+puts product.vendor.sort
+puts product.price
