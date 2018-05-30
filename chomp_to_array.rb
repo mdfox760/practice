@@ -1,9 +1,17 @@
-puts "Enter the array elements (type 'done' to get out)"
+puts "Enter the array numbers (type 'done' to get out)"
 input = gets.chomp
-arr = []
+num_arr = []
 while input != 'done'
-  arr << input.to_i
+  num_arr << input.to_i
   input = gets.chomp
 end
+puts num_arr
 
-puts arr
+puts "Enter the words for the array (type 'done' to get out)"
+input = gets.chomp
+word_arr = []
+while input != 'done'
+  word_arr << input.to_s
+  input = gets.chomp
+end
+puts word_arr

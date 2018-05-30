@@ -2,7 +2,8 @@ class Bank
   attr_accessor :number, :name, :balance
 
   def initialize(number, name, balance)
-    @number = "23456789"
+    number = 0
+    @number = number += 1
     @name = "FoxBank"
     @balance = "50,000,000"
   end
@@ -42,15 +43,13 @@ end
 class NewBankAccount < Bank
   attr_accessor :account, :name, :address, :phone, :balance
 
-  def initialize(account, address, balance, initial_deposit, name, phone)
-    @account = account
+  def initialize(account, name, address, phone, balance)
+
+    @account = account 
     @address = address
-    @initial_deposit
     @name = name
     @phone = phone
     @balance = balance
-
-    puts super(number, name, balance)
   end
 
   def initial_deposit
@@ -58,7 +57,7 @@ class NewBankAccount < Bank
   end
 
   def set_account(account)
-    @account = account
+    @account += 1
   end
 
   def get_account
@@ -94,20 +93,23 @@ class NewBankAccount < Bank
   end
 
   def get_account_balance
-    "$" + @balance
+    "$" + @balance.to_s
   end
 
   def test_new_account
-    puts "New account opening!"
+    puts "New account opening! #{account}"
   end
 end
 
 new_bank = Bank.new("23456789", "FoxBank", "500,000,000")
-nba = NewBankAccount.new("987654", "Matt", "123 Main", "123-555-5555", "250,000")
+nba = NewBankAccount.new(1, "Matt", "123 Main", "123-555-5555", 250000)
+nba2 = NewBankAccount.new(2, "Kyle", "124 Main", "456-555-5556", 50000)
 
-puts new_bank.number
-puts new_bank.name
-puts new_bank.test_method
 puts nba.test_new_account
 puts nba.get_customer_name
-puts nba.get_account_balance
+puts nba.account
+puts nba.get_account_balance.to_s
+puts "****"*3
+puts nba2.get_customer_name
+puts nba2.account
+puts nba2.get_account_balance
