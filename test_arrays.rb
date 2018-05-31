@@ -1,4 +1,5 @@
-# A gotcha! All the Array elements store the same hash, changes to one of them will affect them all.
+# A gotcha! All the Array elements store the same hash, changes to one of them
+# will affect them all.
 
 a = Array.new(3, Hash.new)
 

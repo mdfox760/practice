@@ -45,5 +45,5 @@ user2 = {}
 user2[:full_name] = "Lydia Banana"
 user2[:email] = "lydia@email.com"
 
-puts user.each {|key, value| puts "User Info: \n#{value}"}
-puts user2
+puts user.each {|key, value| puts "User Info: #{key}: \n#{value}"}
+puts user2.each {|k, v| puts "User2 Info: #{k}: #{v}"}

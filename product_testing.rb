@@ -23,7 +23,6 @@ class Product
       "formal_hats" => {type: "Formal", name: "Fedora", price: 39.99},
       "formal_german_hats" => {type: "Formal", name: "Hamburg", price: 49.99}
     }
-
   end
 
   def test_method
@@ -45,7 +44,7 @@ formal_hats = StoreProduct.new("Formal", "Fedora", 39.99)
 formal_german_hats = StoreProduct.new("Formal", "Hamburg", 49.99)
 puts '---' * 10
 shirts.each { |x| puts(x) }
-puts shirts["name"]
+# puts shirts["name"]
 puts shirts[:name]
 puts fruit_of_the_loom[:name]
 # puts shirts.to_a[1]
@@ -59,12 +58,12 @@ puts formal_german_hats[:price]
 puts '---' * 10
 formal_hats.each { |x| puts(x) }
 puts formal_hats
-puts formal_hats.to_a[1]
+# puts formal_hats.to_a[1]
 
 shirts.each_pair {|name, value| puts ("#{name}: #{value}")}
 formal_hats.each_pair {|name, value| puts ("#{name}: #{value}")}
 
-puts shirts.members
+# puts shirts.members
 puts "////"*3
 s = Product.new ()
 
