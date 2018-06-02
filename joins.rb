@@ -6,7 +6,7 @@ puts "This is foods.to_s array: #{foods.to_s}"
 puts "This is foods.join(', '): #{foods.join(', ')}"
 puts foods.join(' :) ') + ' 8)'
 
-# A bunch of empty arrays. 
+# A bunch of empty arrays.
 20.times do
   puts []
 end
