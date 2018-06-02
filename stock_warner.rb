@@ -53,5 +53,5 @@ end
 
 ticker = Ticker.new("MSFT")
 WarnLow.new(ticker, 80)
-WarnHigh.new(ticker, 120)
+WarnHigh.new(ticker, 90)
 ticker.run
