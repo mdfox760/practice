@@ -1,17 +1,12 @@
 class Product
 
   def initialize
-    @distributor
     @item
     @price
     @vendor
   end
 
-  def distributor
-  end
-
   def item
-    items = "Shirts, Hats and Hoodies"
 
     puts "SKU'S"
     skus = { "101" => "shirts", "201" => "hats", "301" => "hoodies" }
@@ -24,23 +19,23 @@ class Product
   end
 
   def price
-    wholesale_shirts = { "shirts" => "$9.99" }
-    wholesale_hats = { "hats" => "$12.99"}
-    wholesale_hoodies = { "hoodies" => "$19.99" }
+    wholesale_shirts = 9.99
+    wholesale_hats = 12.99
+    wholesale_hoodies = 10.99
 
-    retail_shirts = { "shirts" => "$19.99" }
-    retail_hats = { "hats" => "$24.99" }
-    retail_hoodies = { "hoodies" => "$39.99" }
+    retail_shirts = wholesale_shirts * 2
+    retail_hats = wholesale_hats * 2
+    retail_hoodies = wholesale_hoodies * 2
 
     puts "PRICES WHOLESALE"
-    puts wholesale_hats
-    puts wholesale_hoodies
-    puts wholesale_shirts
+    puts "Hats: #{wholesale_hats}"
+    puts "Hoodies: #{wholesale_hoodies}"
+    puts "Shirts: #{wholesale_shirts}"
 
     puts "PRICES RETAIL"
-    puts retail_hats
-    puts retail_hoodies
-    puts retail_shirts
+    puts "Hats: #{retail_hats}"
+    puts "Hoodies: #{retail_hoodies}"
+    puts "Shirts: #{retail_shirts}"
   end
 
   def vendor

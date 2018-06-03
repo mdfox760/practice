@@ -62,4 +62,4 @@ puts "#{account2.name} Balance: $" + account2.balance.to_s
 # Must use to_s
 puts "#{account3.name} Deposit: $" + account3.deposit(4020).to_s
 puts "#{account3.name} Withdraw: $" + account3.withdraw(5000).to_s
-puts "#{account3.name} Balance: $" + account3.balance
+puts "#{account3.name} Balance: $" + account3.balance.to_s
